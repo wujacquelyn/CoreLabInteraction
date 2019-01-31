@@ -1,0 +1,26 @@
+body{
+  font-family: "Hoefler Text", serif;
+  font-weight: normal;
+  font-size: 16pt;
+}
+.Nina{
+  padding: 30pt 30pt 30pt 30pt;
+}
+.blackLeft{
+  padding: 30pt;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  left:0;
+  background-color: black;
+  z-index: 1;
+  color: white;
+}
+.whiteRight {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  right:0;
+  background-color: white;
+  z-index:1;
+}
