@@ -1,5 +1,5 @@
 body{
-  font-family: "Hoefler Text", serif;
+  font-family: "Palatino", serif;
   font-weight: normal;
   font-size: 16pt;
 }
@@ -10,27 +10,34 @@ p1{
   font-size: 24pt;
   line-height: 40pt}
 p2{
-  line-height: 40pt;
-}
+  position: absolute;
+  top:161pt;}
 p3{
+  position: absolute;
+  top:196pt;
   font-size: 24pt;
-  line-height: 40pt;
+  ;
 }
 p4{
-  line-height: 40pt;
-}
-p5{line-height: 60pt;}
+  position: absolute;
+  top:220pt;}
+p5{
+  position: absolute;
+  top:264pt;}
 p6{
-  line-height: 60pt;
   color: red;
-  position: relative;
-  left: 140pt;
+  position: absolute;
+  top: 284pt;
+  left: 115pt;
   font-size: 30pt;
 }
-p7{line-height: 40pt;}
+p7{
+  position: absolute;
+  top:328pt;}
 p8{
-  font-size: 24pt;
-  line-height: 96pt;}
+  position: absolute;
+  top:403pt;
+  font-size: 24pt;}
 
 
 .Thomas{
@@ -38,23 +45,33 @@ p8{
 }
 
 p9{
+  position: absolute;
+  top: 70.5pt;
   font-size: 24pt;
-  line-height: 40pt;}
+  }
 p10{
   font-size: 24pt;
-  line-height: 40pt;}
-p11{line-height: 40pt;}
-p12{line-height: 60pt;}
+  position: absolute;
+  top:161pt;}
+p11{
+  position: absolute;
+  top:196pt;}
+p12{
+  position: absolute;
+  top:220pt;}
 p13{
   line-height: 60pt;
   color: red;
-  position: relative;
+  position: absolute;
+  top: 284pt;
   left: 140pt;
   font-size: 30pt;}
-p14{line-height: 60pt;}
+p14{  position: absolute;
+  top:328pt;}
 p15{
   font-size: 24pt;
-  line-height: 60pt;}
+  position: absolute;
+  top:403pt;}
 
 .blackLeft{
   height: 100%;
