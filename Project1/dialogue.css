@@ -4,10 +4,59 @@ body{
   font-size: 16pt;
 }
 .Nina{
-  padding: 30pt 30pt 30pt 30pt;
+  margin: 30pt;
 }
+p1{
+  font-size: 24pt;
+  line-height: 40pt}
+p2{
+  line-height: 40pt;
+}
+p3{
+  font-size: 24pt;
+  line-height: 40pt;
+}
+p4{
+  line-height: 40pt;
+}
+p5{line-height: 60pt;}
+p6{
+  line-height: 60pt;
+  color: red;
+  position: relative;
+  left: 140pt;
+  font-size: 30pt;
+}
+p7{line-height: 40pt;}
+p8{
+  font-size: 24pt;
+  line-height: 96pt;}
+
+
+.Thomas{
+  margin: 30pt;
+}
+
+p9{
+  font-size: 24pt;
+  line-height: 40pt;}
+p10{
+  font-size: 24pt;
+  line-height: 40pt;}
+p11{line-height: 40pt;}
+p12{line-height: 60pt;}
+p13{
+  line-height: 60pt;
+  color: red;
+  position: relative;
+  left: 140pt;
+  font-size: 30pt;}
+p14{line-height: 60pt;}
+p15{
+  font-size: 24pt;
+  line-height: 60pt;}
+
 .blackLeft{
-  padding: 30pt;
   height: 100%;
   width: 50%;
   position: fixed;
