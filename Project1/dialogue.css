@@ -4,39 +4,39 @@ body{
   font-size: 16pt;
 }
 .Nina{
-  margin: 30pt;
+  margin: 60pt;
 }
 p1{
   font-size: 24pt;
   line-height: 40pt}
 p2{
   position: absolute;
-  top:161pt;}
+  top:224pt;}
 p3{
   position: absolute;
-  top:196pt;
+  top:299pt;
   font-size: 24pt;
   ;
 }
 p4{
   position: absolute;
-  top:220pt;}
+  top:333pt;}
 p5{
   position: absolute;
-  top:264pt;}
+  top:427pt;}
 p6{
   color: red;
   position: absolute;
-  top: 284pt;
-  left: 115pt;
+  top: 437pt;
+  left: 200pt;
   font-size: 30pt;
 }
 p7{
   position: absolute;
-  top:328pt;}
+  top:531pt;}
 p8{
   position: absolute;
-  top:403pt;
+  top:606pt;
   font-size: 24pt;}
 
 
@@ -46,40 +46,40 @@ p8{
 
 p9{
   position: absolute;
-  top: 70.5pt;
+  top: 105pt;
   font-size: 24pt;
   }
 p10{
   font-size: 24pt;
   position: absolute;
-  top:161pt;}
+  top:224pt;}
 p11{
   position: absolute;
-  top:225.5pt;}
+  top:325pt;}
 p12{
   position: absolute;
-  top:264pt;}
+  top:427pt;}
 p13{
   color: red;
   position: absolute;
-  top: 284pt;
-  left: 220pt;
+  top: 437pt;
+  left: 270pt;
   font-size: 30pt;}
 p14{
   position: absolute;
-  top:345.5pt;}
+  top:531pt;}
 p15{
   font-size: 24pt;
   position: absolute;
-  top:403pt;}
+  top:606pt;}
 p16{
   position: absolute;
-  top: 447pt;
+  top: 646pt;
 }
 p17{
   font-size: 24pt;
   position: absolute;
-  top: 522pt;
+  top: 706pt;
 }
 
 .blackLeft{
