@@ -55,23 +55,32 @@ p10{
   top:161pt;}
 p11{
   position: absolute;
-  top:196pt;}
+  top:225.5pt;}
 p12{
   position: absolute;
-  top:220pt;}
+  top:264pt;}
 p13{
-  line-height: 60pt;
   color: red;
   position: absolute;
   top: 284pt;
-  left: 140pt;
+  left: 220pt;
   font-size: 30pt;}
-p14{  position: absolute;
-  top:328pt;}
+p14{
+  position: absolute;
+  top:345.5pt;}
 p15{
   font-size: 24pt;
   position: absolute;
   top:403pt;}
+p16{
+  position: absolute;
+  top: 447pt;
+}
+p17{
+  font-size: 24pt;
+  position: absolute;
+  top: 522pt;
+}
 
 .blackLeft{
   height: 100%;
