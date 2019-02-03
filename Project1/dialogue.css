@@ -29,6 +29,7 @@ p6{
   position: absolute;
   top: 437pt;
   left: 200pt;
+  font-weight: bold;
   font-size: 30pt;
 }
 p7{
@@ -64,7 +65,9 @@ p13{
   position: absolute;
   top: 437pt;
   left: 270pt;
+  font-weight: bold;
   font-size: 30pt;}
+
 p14{
   position: absolute;
   top:531pt;}
@@ -83,7 +86,7 @@ p17{
 }
 
 .blackLeft{
-  height: 100%;
+  height: 1000px;
   width: 50%;
   position: fixed;
   left:0;
@@ -92,7 +95,7 @@ p17{
   color: white;
 }
 .whiteRight {
-  height: 100%;
+  height: 1000px;
   width: 50%;
   position: fixed;
   right:0;
