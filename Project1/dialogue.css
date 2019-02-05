@@ -5,6 +5,14 @@ body{
 }
 .Nina{
   margin: 60pt;
+  overflow:hidden;
+}
+@keyframes typing {
+  0% {width: 0%}
+  30% {width:100%}
+  80% {width: 100%}
+  90% {width:0%}
+  100% {width: 0%}
 }
 p1{
   font-size: 24pt;
@@ -49,6 +57,7 @@ p9{
   position: absolute;
   top: 105pt;
   font-size: 24pt;
+
   }
 p10{
   font-size: 24pt;
@@ -86,16 +95,21 @@ p17{
 }
 
 .blackLeft{
-  height: 1000px;
+  height: 100%;
   width: 50%;
   position: fixed;
   left:0;
   background-color: black;
   z-index: 1;
   color: white;
+  white-space: nowrap;
+  overflow:hidden;
+  animation: typing 25s steps(90) forwards;
+  animation-iteration-count: infinite;
+
 }
 .whiteRight {
-  height: 1000px;
+  height: 100%;
   width: 50%;
   position: fixed;
   right:0;
