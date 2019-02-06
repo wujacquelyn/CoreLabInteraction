@@ -87,20 +87,20 @@ p14{
   position: absolute;
   top:531pt;}
 p15{
-  font-size: 24pt;
+  font-size: 36pt;
   position: absolute;
-  top:606pt;}
+  top:646pt;}
 p16{
   position: absolute;
-  top: 646pt;
+  top: 686pt;
 }
 p17{
   font-size: 24pt;
   position: absolute;
-  top: 736pt;
+  top: 776pt;
 }
 .blackLeft{
-  height: 1000px;
+  height: 1070px;
   width: 50%;
   position: absolute;
   background-color: black;
@@ -109,7 +109,7 @@ p17{
 
 }
 .whiteRight {
-  height: 1000px;
+  height: 1070px;
   width: 50%;
   position: absolute;
   right:0;
