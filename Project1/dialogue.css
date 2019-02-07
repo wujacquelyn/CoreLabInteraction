@@ -18,27 +18,27 @@ audio {
   left: 38%;
 }
 p1{
-  font-size: 24pt;
-  line-height: 40pt}
+  font-size: 50pt;
+  line-height: 52pt}
 p2{
   position: absolute;
   top:224pt;}
 p3{
   position: absolute;
   top:299pt;
-  font-size: 24pt;
-  ;
+  font-size: 50pt;
+  left: 120pt;
 }
 p4{
   position: absolute;
-  top:333pt;}
+  top:383pt;}
 p5{
   position: absolute;
-  top:427pt;}
+  top:447pt;}
 p6{
   color: red;
   position: absolute;
-  top: 437pt;
+  top: 457pt;
   left: 200pt;
   font-weight: bold;
   font-size: 30pt;
