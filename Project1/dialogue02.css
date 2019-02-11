@@ -1,0 +1,125 @@
+.Nina{
+  margin: 60pt;
+  overflow:hidden;
+  font-family: "Palatino", serif;
+  font-weight: normal;
+  font-size: 24pt;
+}
+p1{
+  font-size: 72pt;
+  line-height: 74pt}
+p2{
+  position: absolute;
+  top:500pt;}
+p3{
+  position: absolute;
+  top:750pt;
+  font-size: 40pt;
+}
+p4{
+  position: absolute;
+  top:800pt;}
+p5{
+  position: absolute;
+  top:1100pt;}
+p6{
+  color: red;
+  position: absolute;
+  top: 1130pt;
+  left: 200pt;
+  font-weight: bold;
+  font-size: 70pt;
+}
+p7{
+  position: absolute;
+  top:1350pt;
+  line-height: 40pt;
+  }
+p8{
+  position: absolute;
+  top:1800pt;
+  font-size: 24pt;}
+
+
+.Thomas{
+  margin: 30pt;
+    font-family: "Palatino", serif;
+    font-weight: bold;
+    font-size: 24pt;
+}
+
+p9{
+  position: absolute;
+  top: 350pt;
+  font-size: 40pt;
+
+  }
+p10{
+  font-size: 40pt;
+  position: absolute;
+  top:620pt;}
+p11{
+  position: absolute;
+  top:900pt;}
+p12{
+  position: absolute;
+  top:1100pt;}
+p13{
+  color: red;
+  position: absolute;
+  top: 1130pt;
+  left: 200pt;
+  font-weight: bold;
+  font-size: 70pt;}
+
+p14{
+  position: absolute;
+  top:1600pt;}
+p15{
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  font-size: 36pt;
+  position: absolute;
+  width: 700px;
+  top:1850pt;
+  right: 287pt;
+  background-color: white;
+  }
+p16{
+  margin: 10px;
+  text-align: center;
+  position: absolute;
+  padding: 50px 0px 50px 0px;
+  top: 1910pt;
+  width: 700px;
+  right: 280pt;
+  background-color: white;
+}
+p17{
+  font-size: 36pt;
+  position: absolute;
+  width: 700px;
+  padding: 50px 0px 20px 0px;
+  height: 135px;
+  right: 287pt;
+  top: 2098pt;
+  text-align: center;
+  background-color: white;
+}
+.blackLeft{
+  height: 3000px;
+  width: 50%;
+  position: absolute;
+  background-color: black;
+  z-index: 1;
+  color: white;
+
+}
+.whiteRight {
+  height: 3000px;
+  width: 50%;
+  position: absolute;
+  right:0;
+  background-color: white;
+  z-index:1;
+}
