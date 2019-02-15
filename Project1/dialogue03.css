@@ -5,19 +5,24 @@
   font-weight: normal;
   font-size: 24pt;
 }
+window{
+  height: 5000px;
+  width: 100%;
+
+}
 p1{
   font-size: 72pt;
   line-height: 74pt}
 p2{
-  position: absolute;
+  position: fixed;
   top:950pt;}
 p3{
-  position: absolute;
+  position: fixed;
   top:1450pt;
   font-size: 40pt;
 }
 p4{
-  position: absolute;
+  position: fixed;
   top:1500pt;}
 p5{
   position: absolute;
@@ -103,7 +108,7 @@ p17{
   top: 3850pt;
   height: 200px;
   width:800px;
-  right: 465pt;
+  right: 480pt;
 }
 p18{
   font-size: 100pt;
@@ -113,7 +118,7 @@ p18{
   top: 3850pt;
   height: 200px;
   width:800px;
-  right: 35pt;
+  right: 65pt;
 }
 .blackLeft{
   height: 5500px;
