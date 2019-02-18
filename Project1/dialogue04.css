@@ -100,17 +100,33 @@ p16{
   right: 280pt;
   background-color: white;
 }
-#gohome{
-  z-index: 2;
-  font-size: 100pt;
-  color: gray;
+p17{
   position: absolute;
+  top:5450px;
+  right:0;
+  color:black;
+  font-size: 12pt;
+  font-family: "Courier",serif;
+  font-style: italic;
+}
+button{
+  position: absolute;
+  top: 3850pt;
+  left: 20%;
+  z-index: 2;
+  background: white;
+  border:none;
+  outline: none;
+  cursor: pointer;
+  font-size: 100pt;
+  color: grey;
   text-align: center;
   font-family: "Palatino", serif;
   font-weight: normal;
-  top: 3850pt;
-  left: 20%;
-  height: 200px;
+}
+button:hover{
+  font-size: 120pt;
+  color:black;
 }
 .blackLeft{
   height: 5500px;
