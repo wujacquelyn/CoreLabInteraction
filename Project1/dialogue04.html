@@ -34,13 +34,14 @@
       about Lily or anybody else.<br></p16>
   </div>
   </div>
-<button id="gohome"> Go home and rest.</button>
-  <script language= "javascript" type="text/jhavascript">
-  var fadingText = getElementsByClassName('Nina')
-  var trigger = getElementById('gohome')
+<div id="gohome"> Go home and rest.</div>
+  <script language= "javascript" type="text/javascript">
+  var fadingText = document.getElementsByClassName('Nina')
+  var trigger = document.getElementById('gohome')
 trigger.addEventListener("mouseover",textFade)
-function textFade(){
-  fadingText.style.opacity = "0";
+function textFade(evt){
+  fadingText.style.opacity = "0.5";
+  console.log("mouseover")
 }
   </script>
 </body>

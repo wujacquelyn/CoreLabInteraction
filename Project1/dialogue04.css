@@ -103,7 +103,7 @@ p16{
 #gohome{
   z-index: 2;
   font-size: 100pt;
-  color: black;
+  color: gray;
   position: absolute;
   text-align: center;
   font-family: "Palatino", serif;
@@ -112,7 +112,6 @@ p16{
   left: 20%;
   height: 200px;
 }
-
 .blackLeft{
   height: 5500px;
   width: 50%;
