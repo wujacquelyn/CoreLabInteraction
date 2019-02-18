@@ -2,7 +2,7 @@
 <html>
 <head>
   <title> Black Swan Scene</title>
-  <link rel="stylesheet" type="text/css" href="dialogue03.css">
+  <link rel="stylesheet" type="text/css" href="dialogue04.css">
 </head>
 
 <body>
@@ -32,12 +32,16 @@
     <p16>I know it’s been a struggle, but you just had a breakthrough this morning.
       Tomorrow’s yours, just give it a great performance and you won’t have to worry
       about Lily or anybody else.<br></p16>
-    <p17> Go home</p17>
-    <p18> and rest.</p18>
   </div>
   </div>
+<button id="gohome"> Go home and rest.</button>
   <script language= "javascript" type="text/jhavascript">
-
+  var fadingText = getElementsByClassName('Nina')
+  var trigger = getElementById('gohome')
+trigger.addEventListener("mouseover",textFade)
+function textFade(){
+  fadingText.style.opacity = "0";
+}
   </script>
 </body>
 </html>

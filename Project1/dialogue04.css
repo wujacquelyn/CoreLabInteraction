@@ -100,26 +100,19 @@ p16{
   right: 280pt;
   background-color: white;
 }
-p17{
-  font-size: 100pt;
-  color: white;
-  position: absolute;
-  text-align: center;
-  top: 3850pt;
-  height: 200px;
-  width:800px;
-  right: 520pt;
-}
-p18{
+#gohome{
+  z-index: 2;
   font-size: 100pt;
   color: black;
   position: absolute;
   text-align: center;
+  font-family: "Palatino", serif;
+  font-weight: normal;
   top: 3850pt;
+  left: 20%;
   height: 200px;
-  width:800px;
-  right: 65pt;
 }
+
 .blackLeft{
   height: 5500px;
   width: 50%;
