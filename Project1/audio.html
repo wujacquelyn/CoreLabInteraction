@@ -3,6 +3,30 @@
 <head>
   <h1> Black Swan Scene</h1>
   <style>
+  body{
+    background-color: #333333;
+  }
+  @keyframes ballerina {
+    from { transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+  }
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5in;
+    height: 5in;
+    top: 50%;
+    left: 50%;
+  }
+  img:hover{
+animation-name: ballerina;
+animation-duration: 3s;
+animation-timing-function: linear;
+animation-delay: 0.1s;
+animation-iteration-count: infinite;
+
+  }
   h1{
     font-family: "Optima", sans-serif;
     font-weight: bold;
@@ -17,9 +41,25 @@
   </style>
 </head>
 <body>
-<audio controls loop>
+<img src="imageforaudio.png">
+<audio preload autoplay>
     <source src="blackswanaudio.mp3" type="audio/mpeg">
     <source src="blackswanaudio.ogg" type="audio/ogg">
 </audio>
+<script type="text/javascript">
+var audio = document.querySelector("audio")
+var ballerina = document.querySelector("img")
+ballerina.addEventListener("mouseover", playSound)
+ballerina.addEventListener("mouseout", stopSound)
+  function playSound(evt) {
+  audio.play();
+  ballerina.style.filter= "invert(1)"
+  }
+  function stopSound(evt) {
+  audio.pause();
+  audio.currentTime= 0;
+  ballerina.style.filter= "invert(0)"
+  }
+</script>
 </body>
 </html>
