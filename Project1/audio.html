@@ -61,9 +61,17 @@ animation-iteration-count: infinite;
 <script type="text/javascript">
 var audio = document.querySelector("audio")
 var ballerina = document.querySelector("img")
+var playPromise = audio.play()
+if (playPromise !== undefined) {
+  playPromise.then(_ => {
+  })
+  .catch(error => {
+  });
+}
 ballerina.addEventListener("mouseover", playSound)
 ballerina.addEventListener("mouseout", stopSound)
   function playSound(evt) {
+    console.log(audio.play)
   audio.play();
   ballerina.style.filter= "invert(1)"
   }
@@ -72,6 +80,7 @@ ballerina.addEventListener("mouseout", stopSound)
   audio.currentTime= 0;
   ballerina.style.filter= "invert(0)"
   }
+
 </script>
 </body>
 </html>
