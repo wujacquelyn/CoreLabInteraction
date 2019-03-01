@@ -1,0 +1,170 @@
+<!doctype.html>
+<html>
+<head>
+<title> Chocolate Cake Inspired by Matilda</title>
+<h1>Chocolate Cake</h1>
+<h2>STEP 1</h2>
+<link rel="stylesheet" href="https://use.typekit.net/wzp0nln.css">
+<style>
+body{
+    background-color: #333333;;
+}
+p{
+  color: yellow;
+  position: absolute;
+  top: 20vh;
+  text-align: justify;
+  font-size: 20pt;
+  line-height: 40pt;
+  font-family: blockhead-plain, serif;
+  font-weight: 400;
+  z-index: 0;
+}
+h1{
+  color: white;
+font-size: 50pt;
+text-align: center;
+font-family: blockhead-unplugged, sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+h2{
+color: white;
+display: block;
+position: absolute;
+margin-left: auto;
+margin-right: -50%;
+left: 50%;
+top: 15%;
+transform: translate(-50%, -50%);
+font-size: 30pt;
+font-family: "Helvetica", serif;
+}
+h3{
+  margin: 20px;
+  font-size: 16pt;
+  color: white;
+  font-family: "Helvetica", serif;
+  font-weight: bolder;
+  }
+ul{
+  width: 400px;
+  height: 500px;
+  margin: 5px;
+  font-size: 14pt;
+  color: white;
+  font-family: "Courier", serif;
+}
+h4{
+  width:200px;
+  height: 40px;
+  position: absolute;
+  font-size: 30pt;
+  left: 45pt;
+  color: #421e15;
+  font-family: museo-slab, serif;
+  font-weight: 600;
+}
+a{
+  width:4em;
+  height: 20px;
+  position: absolute;
+  font-size: 72pt;
+  left: 38pt;
+  color: white;
+  font-family: blockhead-dark-side, serif;
+  font-weight: 600;
+}
+
+p2{
+  margin: 10vh 0vh 40vh 0vh;
+  top: 68vh;
+  position: absolute;
+  left: 23vw;
+  width: 18em;
+  font-size: 22pt;
+  color: white;
+  font-family:  blockhead-dark-side, serif;
+  font-weight: 300;
+}
+#step1{
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+}
+#step2{
+  position: absolute;
+  top: 60vh;
+  left: 25vw;
+}
+#step3{
+  position: absolute;
+  top: 70vh;
+  left: 60vw;
+}
+#step4{
+  position: absolute;
+  top: 75vh;
+  left: 25vw;
+}
+#countdown{
+  position: fixed;
+  top: 50vh;
+  text-align: center;
+  font-family: "Helvetica", sans-serif;
+  font-size: 100pt;
+  font-weight:bold;
+  color: red;
+  font-style: normal;
+}
+</style>
+</head>
+<body>
+<p> Matilda, Danny DeVito's thunderous directorial follow-up to Hoffa
+(1992), features an inexplicably tempting chocolate cake, despite its
+open admission of containing bodily fluids. Sit down and consume this
+ entire confection today alongside Dan Pashman of The Sporkful.
+</p>
+<span class="cake">
+  <div id="ingr">
+    <h3>What You Need:</h3>
+    <ul>
+      <li>1 Tbsp butter</li>
+      <li>a bit of flour</li>
+      <li>9" cake pans x 3</li>
+      <li>Round sheet of Parchment Paper</li>
+  </div>
+  <div id="countdown"></div>
+  <div id="step1">
+      <a href="STEP1.html"> Step 1</a>
+  </div>
+      <p2>Preheat oven to 350°F.  Liberally butter three 9” cake pans, and tap
+        a tablespoon of flour around in each, until evenly coated.  Line with
+        a round sheet of parchment paper.</p2>
+  <div id="step2">
+    <a href="STEP2.html">Step 2</a>
+  </div>
+
+  <div id="step3">
+    <a href="STEP3.html">Step 3</a>
+  </div>
+
+  <div id="step4">
+    <a href="STEP4.html">Step 4</a>
+
+  </div>
+</span>
+<script type="text/javascript">
+setTimeout("location.href ='STEP2.html';", 12000)
+var timeleft = 10;
+var downloadTimer = setInterval(
+  function(){
+  document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+  timeleft -= 1;
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+  document.getElementById("countdown").innerHTML = "Redirecting..."}
+}, 1000);
+</script>
+</body>
+</html>

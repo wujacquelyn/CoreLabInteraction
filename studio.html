@@ -1,0 +1,183 @@
+<!doctype.html>
+<html>
+<head>
+<title>Core Studio Interaction</title>
+<link rel="stylesheet" href="https://use.typekit.net/rew6pwt.css">
+<style>
+h1{
+font-weight:800;
+letter-spacing: 0.5px;
+font-size: 20pt;
+position: fixed;
+position: absolute;
+top: 40%;
+left: 60%;
+}
+body{
+  font-family: joanna-nova,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20pt;
+  padding: 30pt;
+  background-color: black;
+  color: white;
+}
+/* thebuttuns*/
+.project1{
+z-index: 0;
+border: none;
+background: black;
+color: #ffffff;
+font-weight: 100;
+font-family: joanna-nova,sans-serif;
+font-size: 14pt;
+text-transform: uppercase;
+border-radius: 6px;
+display: inline-block;
+position: fixed;
+top: 60vh;
+left: 25%;
+}
+.project1:hover{
+cursor: pointer;
+color: #404040 !important;
+font-weight: 700 !important;
+letter-spacing: 3px;
+background: none;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.3s ease 0s;
+}
+.project1:focus{
+  outline: none;
+}
+.project2{
+border: none;
+background: black;
+color: #ffffff;
+font-family: joanna-nova,sans-serif;
+font-size: 14pt;
+font-weight: 100;
+font-size: 14pt;
+text-transform: uppercase;
+border-radius: 6px;
+display: inline-block;
+position: fixed;
+top: 60vh;
+left: 55%;
+}
+.project2:hover {
+cursor: pointer;
+color: #404040 !important;
+font-weight: 700 !important;
+letter-spacing: 3px;
+background: none;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.3s ease 0s;
+}
+a{
+  color:#212121;
+}
+a:hover{
+  color:#404040;
+}
+/* menu bar */
+.sidenav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1E1E1E;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20pt;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+blackswan{
+  display: block;
+}
+
+</style>
+<head>
+<body>
+  <h1> Core Studio Interaction</h1>
+  <!-- projectbuttons-->
+  <div id="button1">
+    <button class="project1">Project 1: Movie Dialogue
+              <ul>
+                <a href="../CoreLabInteraction/Project1/dialogue01.html">Black Swan: Ver. 01</a>
+                <br><a href="../CoreLabInteraction/Project1/dialogue02.html">Black Swan: Ver. 02</a>
+                <br><a href="../CoreLabInteraction/Project1/dialogue03.html">Black Swan: Ver. 03</a>
+                <br><a href="../CoreLabInteraction/Project1/dialogue04.html">Black Swan: Ver. 04</a>
+              </ul>
+    </button>
+  </div>
+  <div class="button2">
+    <button class="project2" target="_blank" rel="nofollow noopener">Project 2: Recipe</a>
+            <ul>
+              <a href="recipe_colorblind.html">Color Blind: Ver. 01</a>
+              <br><a href="recipe_colorblindV2.html">Color Blind: Ver. 02</a>
+              <br><a href="anxiety_pg1.html">Anxiety</a>
+              <br><a href="recipe.html">Most Accessible: Ver.01</a>
+              <br><a href="recipe_trial2_pg1.html">Most Accessible: Ver.02</a>
+            </ul>
+    </button>
+  </div>
+
+  <!-- menu bar-->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html"> HOME </a>
+    <a href="studio.html"> STUDIO </a>
+    <a href="lab.html"> LAB </a>
+  </div>
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+</body>
+<script type="text/javascript">
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  }
+  function closeNav() {
+  console.log(closeNav)
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+function myFunction() {
+var x = document.getElementById("blackswan");
+if (x.className.indexOf("dropdown1") == -1) {
+  x.className += "dropdown1";
+} else {
+  x.className = x.className.replace("dropdown1", "");
+}
+}
+</script>
+</html>

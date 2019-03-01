@@ -1,0 +1,187 @@
+<!doctype.html>
+<html>
+<head>
+<title> Chocolate Cake Inspired by Matilda</title>
+<h1>Chocolate Cake</h1>
+<h2>STEP 4</h2>
+<link rel="stylesheet" href="https://use.typekit.net/wzp0nln.css">
+<link rel="stylesheet" href="https://use.typekit.net/wzp0nln.css">
+<style>
+body{
+  background-color: #fff2e0;
+}
+h1{
+  color: #421e15;
+font-size: 48pt;
+text-align: center;
+font-family: blenny, sans-serif;
+font-weight: 900;
+font-style: normal;
+font-weight: 500;
+}
+h2{
+color: #421e15;
+display: block;
+position: absolute;
+margin-left: auto;
+margin-right: -50%;
+left: 50%;
+top: 15%;
+transform: translate(-50%, -50%);
+font-size: 30pt;
+font-family: museo-slab, serif;
+}
+
+
+h4{
+  width:200px;
+  height: 40px;
+  position: absolute;
+  font-size: 30pt;
+  left: 45pt;
+  color: #8C5419;
+  font-family: museo-slab, serif;
+  font-weight: 600;
+}
+a{
+  width:100px;
+  height: 20px;
+  position: absolute;
+  font-size: 15pt;
+  left: 38pt;
+  color: #421e15;
+  font-family: museo-slab, serif;
+  font-weight: 600;
+}
+
+p2{
+  position: absolute;
+  margin: 10vh 0vh 60vh 0vh;
+  top: 50vh;
+  left: 23vw;
+  width: 18em;
+  font-size: 22pt;
+  color: #8C5419;
+  font-family: museo-slab, serif;
+  font-weight: 300;
+}
+
+#step1{
+  position: absolute;
+  top: 60vh;
+  left: 5vw;
+  cursor: pointer;
+        width: 0px;
+        height: 0px;
+        border-right: 25px solid transparent;
+        border-top: 25px solid #421e15;
+        border-left: 25px solid #421e15;
+        border-bottom: 25px solid #421e15;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+}
+#step2{
+  position: absolute;
+  top: 80vh;
+  left: 5vw;
+        width: 0px;
+        height: 0px;
+        border-right: 25px solid #421e15;
+        border-top: 25px solid #421e15;
+        border-left: 25px solid #421e15;
+        border-bottom: 25px solid transparent;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+}
+
+#step3{
+  position: absolute;
+  top: 100vh;
+  left: 5vw;
+  cursor: pointer;
+        width: 0px;
+        height: 0px;
+        border-right: 25px solid #421e15;
+        border-top: 25px solid #421e15;
+        border-left: 25px solid transparent;
+        border-bottom: 25px solid #421e15;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+}
+#step4{
+  position: absolute;
+  top: 30vh;
+  left: 20vw;
+  cursor: pointer;
+        width: 0px;
+        height: 0px;
+        border-right: 50px solid #8C5419;
+        border-top: 50px solid transparent;
+        border-left: 50px solid #8C5419;
+        border-bottom: 50px solid #8C5419;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+}
+#backArrow{
+  color: #421e15;
+  font-size: 72pt;
+  font-family: museo-slab, serif;
+  font-weight: 600;
+  cursor: pointer;
+  position: fixed;
+  left:0;
+  top:0;
+}
+#nextArrow{
+  color: #421e15;
+  font-size: 72pt;
+  font-family: museo-slab, serif;
+  font-weight: 600;
+  cursor: pointer;
+  position: fixed;
+  right:0;
+  top:0;
+}
+</style>
+</head>
+<body>
+<div id= "backArrow">&#8592;</div>
+<div id= "nextArrow">&#8594;</div>
+<span class="cake">
+
+  <div id="step1">
+    <a href="STEP1.html">Step 1</a>
+  </div>
+      <p2>Slice the rounded tops off each layer of the cake, frost, slice,
+         and serve.</p2>
+  <div id="step2">
+    <a href="STEP2.html">Step 2</a>
+  </div>
+
+  <div id="step3">
+    <a href="STEP3.html">Step 3</a>
+  </div>
+
+  <div id="step4">
+    <h4> Step 4</h4>
+
+  </div>
+</span>
+<script type="text/javascript">
+document.getElementById("backArrow").onclick = function (){
+  location.href = "STEP3.html";
+  }
+  document.getElementById("nextArrow").onclick = function (){
+    location.href = "ending.html";
+    }
+</script>
+</body>
+</html>

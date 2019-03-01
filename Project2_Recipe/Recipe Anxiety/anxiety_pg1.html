@@ -1,0 +1,157 @@
+<!doctype.html>
+<html>
+<head>
+<title> Chocolate Cake Inspired by Matilda</title>
+<h1>Chocolate Cake</h1>
+<h2>Inspired by Matilda</h2>
+<link rel="stylesheet" href="https://use.typekit.net/wzp0nln.css">
+<style>
+body{
+  background-color: #333333;
+}
+p{
+  color: yellow;
+  position: absolute;
+  top: 20vh;
+  text-align: justify;
+  font-size: 20pt;
+  line-height: 40pt;
+  font-family: blockhead-plain, serif;
+  font-weight: 400;
+  z-index: 0;
+}
+h1{
+  color: white;
+font-size: 50pt;
+text-align: center;
+font-family: blockhead-unplugged, sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+h2{
+color: white;
+display: block;
+position: absolute;
+margin-left: auto;
+margin-right: -50%;
+left: 50%;
+top: 15%;
+transform: translate(-50%, -50%);
+font-size: 30pt;
+font-family: "Helvetica", serif;
+}
+h3{
+margin: 20px;
+font-size: 16pt;
+color: white;
+font-family: "Helvetica", serif;
+font-weight: bolder;
+}
+ul{
+  width: 400px;
+  height: 500px;
+  margin: 5px;
+  font-size: 14pt;
+  color: white;
+  font-family: "Courier", serif;
+}
+a{
+  width:4em;
+  height: 10px;
+  font-size: 72pt;
+  text-align: center;
+  font-family: blockhead-black-face, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+}
+#step1{
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+}
+#step2{
+  position: absolute;
+  top: 60vh;
+  left: 25vw;
+}
+#step3{
+  position: absolute;
+  top: 70vh;
+  left: 60vw;
+}
+#step4{
+  position: absolute;
+  top: 75vh;
+  left: 25vw;
+}
+#countdown{
+  position: fixed;
+  top: 50vh;
+  text-align: center;
+  font-family: "Helvetica", sans-serif;
+  font-size: 100pt;
+  font-weight:bold;
+  color: red;
+  font-style: normal;
+}
+</style>
+</head>
+<body>
+<p> Matilda, Danny DeVito's thunderous directorial follow-up to Hoffa
+(1992), features an inexplicably tempting chocolate cake, despite its
+open admission of containing bodily fluids. Sit down and consume this
+ entire confection today alongside Dan Pashman of The Sporkful.
+</p>
+<span class="cake">
+  <div id="ingr">
+    <h3>Ingredients Used:</h3>
+    <ul>
+      <li>1 Tbsp butter</li>
+      <li>3 cups flour(plus more for dusting)</li>
+      <li>3 cups sugar</li>
+      <li>1 1/2 cups unsweetened cocoa powder</li>
+      <li>1 Tbsp baking powder </li>
+      <li>2 Tbsp baking soda</li>
+      <li>1 tsp salt</li>
+      <li>1 1/2 cups buttermilk</li>
+      <li>4 large eggs</li>
+      <li>1/2 cup vegetable oil</li>
+      <li>8 ounces cream cheese</li>
+      <li>12 ounces butter</li>
+      <li>1 cup unsweetened cocoa powder</li>
+      <li>1 1/2 pound powdered sugar</li>
+      <li>1/4 cup milk(optional)</li>
+  </div>
+  <div id="countdown"></div>
+  <div id="step1">
+      <a href="STEP1.html">Step 1</a>
+  </div>
+
+  <div id="step2">
+    <a href="STEP2.html">Step 2</a>
+  </div>
+
+  <div id="step3">
+    <a href="STEP3.html">Step 3</a>
+  </div>
+
+  <div id="step4">
+    <a href="STEP4.html">Step 4</a>
+
+  </div>
+</span>
+<script type="text/javascript">
+setTimeout("location.href ='STEP1.html';", 12000)
+var timeleft = 10;
+var downloadTimer = setInterval(function(){
+  document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+  timeleft -= 1;
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("countdown").innerHTML = "Redirecting..."
+  }
+}, 1000);
+</script>
+</body>
+</html>
