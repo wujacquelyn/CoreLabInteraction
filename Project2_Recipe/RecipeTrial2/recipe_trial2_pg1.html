@@ -45,7 +45,7 @@ p{
 @media screen and (max-width: 414px){
   p2{
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-45%, -50%);
     text-align: center;
     width:300px;
     color:#421e15;
@@ -63,16 +63,32 @@ p2{
   font-family: museo-slab, serif;
   font-weight: 600;
 }
+@media screen and (max-width:414px){
+  h1{
+  line-height: 1em;
+  text-align: center;
+  font-family: blenny, sans-serif;
+  font-style: normal;
+  font-weight: 500;'
+    font-size: 14pt;
+  }
+}
 h1{
+margin:0;
   color: #421e15;
 font-size: 48pt;
 text-align: center;
 font-family: blenny, sans-serif;
 font-weight: 900;
 font-style: normal;
-font-weight: 500;
 }
-
+@media screen and (max-width: 414px){
+  h2{
+  margin-top: 2em;
+  position: absolute;
+  font-size: 2em;
+  }
+}
 h2{
 color: #421e15;
 display: block;
@@ -82,8 +98,13 @@ margin-right: -50%;
 left: 50%;
 top: 15%;
 transform: translate(-50%, -50%);
-font-size: 30pt;
 font-family: museo-slab, serif;
+font-size: 24pt;
+}
+@media screen and (max-widthL 414px){
+  #nextArrow{
+    background-color: blue;
+  }
 }
 #nextArrow{
   color: #421e15;
@@ -95,9 +116,11 @@ font-family: museo-slab, serif;
   right:0;
   top:0;
 }
+
 @media screen and (max-width: 414px){
   video{
     width: 300px;
+    margin: 20px;
   }
 }
 video{
@@ -109,12 +132,13 @@ transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 414px){
-  #clip{
-    height: 160px;
-    width: 300px;
+#videoBOX{
+  margin: 20px;
+  width: 70vw;
+  height: 25vh;
   }
 }
-#clip{
+#videoBOX{
   border-radius: 25px 25px 25px 25px;
   z-index: 1;
   position: absolute;
@@ -122,8 +146,8 @@ transform: translate(-50%, -50%);
   left: 50vw;
 transform: translate(-50%, -50%);
   background-color: #421e15;
-  width: 560px;
-  height: 360px;
+  width: 90vw;
+  height: 60vh;
 }
 </style>
 </head>
@@ -133,7 +157,7 @@ transform: translate(-50%, -50%);
 open admission of containing bodily fluids. Sit down and consume this
  entire confection today alongside Dan Pashman of The Sporkful.</p>
 <p2> Recipe from Andrew Rea (Binging with Babish)</p2>
-<div id = "clip"></div>
+<div id = "videoBOX"></div>
 <video width= "520" height= "320" controls>
 <source src="BABI.mp4" type="video/mp4">
 <source src="BABI.mp4" type="video/ogg">
