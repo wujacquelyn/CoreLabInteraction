@@ -4,12 +4,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> Chocolate Cake Inspired by Matilda</title>
 <h1>Chocolate Cake</h1>
-<h2>Instructions</h2>
+<h2>...Almost done!</h2>
 <link rel="stylesheet" href="https://use.typekit.net/wzp0nln.css">
 <link rel="stylesheet" href="https://use.typekit.net/wzp0nln.css">
 <style>
 body{
   background-color: #fff2e0;
+  margin: 0%;
 }
 h1{
   color: #421e15;
@@ -20,19 +21,38 @@ font-weight: 900;
 font-style: normal;
 font-weight: 500;
 }
+@media screen and (max-width: 414px){
+  h1{
+  margin:0%;
+  color: #421e15;
+  font-size: 10vh;
+  text-align: center;
+  font-family: blenny, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 10vh;
+    }
+  }
 h2{
 color: #421e15;
-display: block;
 position: absolute;
-margin-left: auto;
-margin-right: -50%;
 left: 50%;
 top: 15%;
 transform: translate(-50%, -50%);
 font-size: 5vh;
 font-family: museo-slab, serif;
 }
-
+@media screen and (max-width: 414px){
+  h2{
+  color: #421e15;
+  position: absolute;
+  left: 50%;
+  top: 25vh;
+  transform: translate(-50%, -50%);
+  font-size: 5vh;
+  font-family: museo-slab, serif;
+  }
+}
 
 h4{
   width:200px;
@@ -44,6 +64,20 @@ h4{
   font-family: museo-slab, serif;
   font-weight: 600;
 }
+  @media screen and (max-width: 414px){
+  h4{
+  width:200px;
+  height: 40px;
+  position: absolute;
+  margin:0vh;
+  top: 1vh;
+  font-size: 4vh;
+  left: 1em;
+  color: #8C5419;
+  font-family: museo-slab, serif;
+  font-weight: 600;
+}
+  }
 a{
   width:100px;
   height: 20px;
@@ -54,11 +88,22 @@ a{
   font-family: museo-slab, serif;
   font-weight: 600;
 }
-
+  @media screen and (max-width: 414px){
+    a{
+      width:100px;
+      height: 20px;
+      position: absolute;
+      font-size: 2vh;
+      left: 2em;
+      color: #421e15;
+      font-family: museo-slab, serif;
+      font-weight: 600;
+    }
+  }
 p2{
   position: absolute;
-  margin: 10vh 0vh 60vh 0vh;
-  top: 50vh;
+  margin: 5vh 5vw 60vh 5vw;
+  top: 70vh;
   left: 38vw;
   width: 18em;
   font-size: 22pt;
@@ -66,108 +111,192 @@ p2{
   font-family: museo-slab, serif;
   font-weight: 300;
 }
+  @media screen and (max-width:414px){
+    p2{
+      margin: 0vh;
+      top: 62vh;
+      position: absolute;
+      left: 40vw;
+      width: 10em;
+      font-size: 3vh;
+      color: #8C5419;
+      font-family: museo-slab, serif;
+      font-weight: 300;
+  }
+}
 
 #step1{
   position: absolute;
-  top: 50vh;
+  top: 40vh;
   left: 5vw;
   cursor: pointer;
-        width: 0px;
-        height: 0px;
-        border-right: 25px solid transparent;
-        border-top: 25px solid #421e15;
-        border-left: 25px solid #421e15;
-        border-bottom: 25px solid #421e15;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
+  width: 0px;
+  height: 0px;
+  border-right: 4vh solid transparent;
+  border-top: 4vh solid #421e15;
+  border-left: 4vh solid #421e15;
+  border-bottom: 4vh solid #421e15;
+  border-radius: 4vh;
 }
+@media screen and (max-width:414px){
+      #step1{
+        position: absolute;
+        top: 45vh;
+        left: 5vw;
+        cursor: pointer;
+              width: 0px;
+              height: 0px;
+              border-right: 2vh solid transparent;
+              border-top: 2vh solid #421e15;
+              border-left: 2vh solid #421e15;
+              border-bottom: 2vh solid #421e15;
+              border-top-left-radius: 2vh;
+              border-top-right-radius: 2vh;
+              border-bottom-left-radius: 2vh;
+              border-bottom-right-radius: 2vh;
+      }
+    }
 #step2{
   position: absolute;
-  top: 70vh;
+  top: 60vh;
   left: 5vw;
-        width: 0px;
-        height: 0px;
-        border-right: 25px solid #421e15;
-        border-top: 25px solid #421e15;
-        border-left: 25px solid #421e15;
-        border-bottom: 25px solid transparent;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
+  width: 0px;
+  height: 0px;
+  border-right: 4vh solid #421e15;
+  border-top: 4vh solid #421e15;
+  border-left: 4vh solid #421e15;
+  border-bottom: 4vh solid transparent;
+  border-radius: 4vh;
 }
-
+  @media screen and (max-width:414px){
+    #step2{
+      position: absolute;
+      top: 55vh;
+      left: 5vw;
+      cursor: pointer;
+      width: 0px;
+      height: 0px;
+      border-right: 2vh solid #421e15;
+      border-top: 2vh solid #421e15;
+      border-left: 2vh solid #421e15;
+      border-bottom: 2vh solid transparent;
+      border-radius: 2vh;
+    }
+}
 #step3{
   position: absolute;
-  top: 90vh;
+  top: 80vh;
   left: 5vw;
   cursor: pointer;
-        width: 0px;
-        height: 0px;
-        border-right: 25px solid #421e15;
-        border-top: 25px solid #421e15;
-        border-left: 25px solid transparent;
-        border-bottom: 25px solid #421e15;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
+  width: 0px;
+  height: 0px;
+  border-right: 4vh solid #421e15;
+  border-top: 4vh solid #421e15;
+  border-left: 4vh solid transparent;
+  border-bottom: 4vh solid #421e15;
+  border-radius: 4vh;
 }
+@media screen and (max-width:414px){
+  #step3{
+    position: absolute;
+    top: 65vh;
+    left: 5vw;
+    cursor: pointer;
+      width: 0px;
+      height: 0px;
+      border-right: 2vh solid #421e15;
+      border-top: 2vh solid #421e15;
+      border-left: 2vh solid transparent;
+      border-bottom: 2vh solid #421e15;
+      border-radius: 2vh;
+    }
+  }
 #step4{
   position: absolute;
-  top: 30vh;
+  top: 40vh;
   left: 30vw;
   cursor: pointer;
         width: 0px;
         height: 0px;
-        border-right: 50px solid #8C5419;
-        border-top: 50px solid transparent;
-        border-left: 50px solid #8C5419;
-        border-bottom: 50px solid #8C5419;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
+        border-right: 7vh solid #8C5419;
+        border-top: 7vh solid transparent;
+        border-left: 7vh solid #8C5419;
+        border-bottom: 7vh solid #8C5419;
+        border-radius: 7vh;
 }
+    @media screen and (max-width: 414px){
+      #step4{
+        position: absolute;
+        top: 48vh;
+        left: 40vw;
+        cursor: pointer;
+              width: 0px;
+              height: 0px;
+              border-right: 4vh solid #8C5419;
+              border-top: 4vh solid transparent;
+              border-left: 4vh solid #8C5419;
+              border-bottom: 4vh solid #8C5419;
+              border-radius: 4vh;
+      }
+    }
   #step4SIDE{
     position: absolute;
-    top: 110vh;
+    top: 100vh;
+    left: 5vw;
+    cursor: pointer;
+    width: 0px;
+    height: 0px;
+    border-right: 4vh solid #421e15;
+    border-top: 4vh solid transparent;
+    border-left: 4vh solid #421e15;
+    border-bottom: 4vh solid #421e15;
+    border-radius: 4vh;
+  }
+  @media screen and (max-width: 414px){
+    #step4SIDE{
+    position: absolute;
+    top: 75vh;
     left: 5vw;
     cursor: pointer;
           width: 0px;
           height: 0px;
-          border-right: 25px solid #421e15;
-          border-top: 25px solid transparent;
-          border-left: 25px solid #421e15;
-          border-bottom: 25px solid #421e15;
-          border-top-left-radius: 25px;
-          border-top-right-radius: 25px;
-          border-bottom-left-radius: 25px;
-          border-bottom-right-radius: 25px;
+          border-right: 2vh solid #421e15;
+          border-top: 2vh solid transparent;
+          border-left: 2vh solid #421e15;
+          border-bottom: 2vh solid #421e15;
+          border-radius: 2vh;
+  }
   }
 #backArrow{
   color: #8C5419;
-  font-size: 72pt;
+  font-size: 15vh;
   font-family: museo-slab, serif;
   font-weight: 600;
   cursor: pointer;
   position: absolute;
   left:0;
-  top:0;
+  top:123vh;
 }
+  @media screen and (max-width: 414px){
+      #backArrow{
+      top: 83vh;
+      }
+    }
 #nextArrow{
   color: #421e15;
-  font-size: 100pt;
+  font-size: 20vh;
   font-family: museo-slab, serif;
   font-weight: 600;
   cursor: pointer;
   position: absolute;
   right:0;
-  top:0;
+  top:120vh;
 }
-
+  @media screen and (max-width: 414px){
+    #nextArrow{
+      top: 80vh;
+    }
+  }
 </style>
 </head>
 <body>
