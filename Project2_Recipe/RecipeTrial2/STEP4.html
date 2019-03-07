@@ -3,7 +3,7 @@
 <head>
 <title> Chocolate Cake Inspired by Matilda</title>
 <h1>Chocolate Cake</h1>
-<h2>STEP 4</h2>
+<h2>Instructions</h2>
 <link rel="stylesheet" href="https://use.typekit.net/wzp0nln.css">
 <link rel="stylesheet" href="https://use.typekit.net/wzp0nln.css">
 <style>
@@ -12,7 +12,7 @@ body{
 }
 h1{
   color: #421e15;
-font-size: 48pt;
+font-size: 10vh;
 text-align: center;
 font-family: blenny, sans-serif;
 font-weight: 900;
@@ -28,7 +28,7 @@ margin-right: -50%;
 left: 50%;
 top: 15%;
 transform: translate(-50%, -50%);
-font-size: 30pt;
+font-size: 5vh;
 font-family: museo-slab, serif;
 }
 
@@ -58,7 +58,7 @@ p2{
   position: absolute;
   margin: 10vh 0vh 60vh 0vh;
   top: 50vh;
-  left: 23vw;
+  left: 38vw;
   width: 18em;
   font-size: 22pt;
   color: #8C5419;
@@ -68,7 +68,7 @@ p2{
 
 #step1{
   position: absolute;
-  top: 60vh;
+  top: 50vh;
   left: 5vw;
   cursor: pointer;
         width: 0px;
@@ -84,7 +84,7 @@ p2{
 }
 #step2{
   position: absolute;
-  top: 80vh;
+  top: 70vh;
   left: 5vw;
         width: 0px;
         height: 0px;
@@ -100,7 +100,7 @@ p2{
 
 #step3{
   position: absolute;
-  top: 100vh;
+  top: 90vh;
   left: 5vw;
   cursor: pointer;
         width: 0px;
@@ -117,7 +117,7 @@ p2{
 #step4{
   position: absolute;
   top: 30vh;
-  left: 20vw;
+  left: 30vw;
   cursor: pointer;
         width: 0px;
         height: 0px;
@@ -130,26 +130,43 @@ p2{
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
 }
+  #step4SIDE{
+    position: absolute;
+    top: 110vh;
+    left: 5vw;
+    cursor: pointer;
+          width: 0px;
+          height: 0px;
+          border-right: 25px solid #421e15;
+          border-top: 25px solid transparent;
+          border-left: 25px solid #421e15;
+          border-bottom: 25px solid #421e15;
+          border-top-left-radius: 25px;
+          border-top-right-radius: 25px;
+          border-bottom-left-radius: 25px;
+          border-bottom-right-radius: 25px;
+  }
 #backArrow{
-  color: #421e15;
+  color: #8C5419;
   font-size: 72pt;
   font-family: museo-slab, serif;
   font-weight: 600;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   left:0;
   top:0;
 }
 #nextArrow{
   color: #421e15;
-  font-size: 72pt;
+  font-size: 100pt;
   font-family: museo-slab, serif;
   font-weight: 600;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   right:0;
   top:0;
 }
+
 </style>
 </head>
 <body>
@@ -172,7 +189,9 @@ p2{
 
   <div id="step4">
     <h4> Step 4</h4>
-
+  </div>
+  <div id="step4SIDE">
+    <a href="STEP4.html">Step 4</a>
   </div>
 </span>
 <script type="text/javascript">

@@ -3,7 +3,7 @@
 <head>
 <title> Chocolate Cake Inspired by Matilda</title>
 <h1>Chocolate Cake</h1>
-<h2>STEP 1</h2>
+<h2>Instructions</h2>
 <link rel="stylesheet" href="https://use.typekit.net/wzp0nln.css">
 <link rel="stylesheet" href="https://use.typekit.net/wzp0nln.css">
 <style>
@@ -12,43 +12,85 @@ body{
 }
 h1{
   color: #421e15;
-font-size: 48pt;
-text-align: center;
-font-family: blenny, sans-serif;
-font-weight: 900;
-font-style: normal;
-font-weight: 500;
+  font-size: 10vh;
+  text-align: center;
+  font-family: blenny, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-weight: 500;
+}
+@media screen and (max-width: 414px){
+  h1{
+  color: #421e15;
+  font-size: 10vh;
+  text-align: center;
+  font-family: blenny, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1em;
+    }
 }
 h2{
-color: #421e15;
-display: block;
-position: absolute;
-margin-left: auto;
-margin-right: -50%;
-left: 50%;
-top: 15%;
-transform: translate(-50%, -50%);
-font-size: 30pt;
-font-family: museo-slab, serif;
+  color: #421e15;
+  position: absolute;
+  margin-top: 0vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vh;
+  font-family: museo-slab, serif;
+}
+@media screen and (max-width: 414px){
+  h2{
+  color: #421e15;
+  position: absolute;
+  left: 50%;
+  top: 25vh;
+  transform: translate(-50%, -50%);
+  font-size: 5vh;
+  font-family: museo-slab, serif;
+  }
 }
 h3{
-margin: 20px;
-font-size: 16pt;
-color: #421e15;
-font-family: museo-slab, serif;
-font-weight: bolder;
-}
+  margin: 1em;
+  font-size: 3vh;
+  color: #421e15;
+  font-family: museo-slab, serif;
+  font-weight: bolder;
+  }
+@media screen and (max-width: 414px){
+  h3{
+    margin: 0.5em;
+    font-size: 3vh;
+    color: #421e15;
+    font-family: museo-slab, serif;
+    font-weight: bolder;
+    }
+  }
 #ingr{
-position: absolute;
-top: 50vh;
-right:8vw;
-width:25vw;
-height: 50vh;
-border-radius: 10px;
-border-style: dotted;
-border-width: medium;
-border-color: #421e15;
+  position: absolute;
+  top: 50vh;
+  right:8vw;
+  width:25vw;
+  height: 50vh;
+  border-radius: 10px;
+  border-style: dotted;
+  border-width: medium;
+  border-color: #421e15;
 }
+  @media screen and (max-width: 414px){
+    #ingr{
+      position: absolute;
+      top: 35vh;
+      right:8vw;
+      width:85vw;
+      height: 18vh;
+      border-radius: 10px;
+      border-style: dotted;
+      border-width: medium;
+      border-color: #421e15;
+    }
+  }
 ul{
   position: relative;
   line-height: 20pt;
@@ -56,10 +98,22 @@ ul{
   left: 0px;
   height: 50vh;
   width: 250px;
-  font-size: 14pt;
+  font-size: 3vh;
   color: #421e15;
   font-family: "Courier", serif;
 }
+  @media screen and (max-width: 414px){
+    ul{
+      position: relative;
+      line-height: 1em;
+      margin: 0vh;
+      left: 2em;
+      width: 250px;
+      font-size: 2vh;
+      color: #421e15;
+      font-family: "Courier", serif;
+    }
+  }
 h4{
   width:200px;
   height: 40px;
@@ -70,6 +124,20 @@ h4{
   font-family: museo-slab, serif;
   font-weight: 600;
 }
+  @media screen and (max-width: 414px){
+    h4{
+      width:200px;
+      height: 40px;
+      position: absolute;
+      margin:0vh;
+      top: 1vh;
+      font-size: 4vh;
+      left: 1em;
+      color: #8C5419;
+      font-family: museo-slab, serif;
+      font-weight: 600;
+    }
+  }
 a{
   width:100px;
   height: 20px;
@@ -80,10 +148,21 @@ a{
   font-family: museo-slab, serif;
   font-weight: 600;
 }
-
+@media screen and (max-width:414px){
+  a{
+  width:100px;
+  height: 20px;
+  position: absolute;
+  font-size: 2vh;
+  left: 2em;
+  color: #421e15;
+  font-family: museo-slab, serif;
+  font-weight: 600;
+  }
+}
 p2{
-  margin: 10vh 0vh 40vh 0vh;
-  top: 50vh;
+  margin: 5vh 0vh 40vh 0vh;
+  top: 70vh;
   position: absolute;
   left: 23vw;
   width: 18em;
@@ -92,90 +171,199 @@ p2{
   font-family: museo-slab, serif;
   font-weight: 300;
 }
-
+  @media screen and (max-width:414px){
+    p2{
+      margin: 0vh;
+      top: 75vh;
+      position: absolute;
+      left: 40vw;
+      width: 10em;
+      font-size: 3vh;
+      color: #8C5419;
+      font-family: museo-slab, serif;
+      font-weight: 300;
+    }
+  }
 #step1{
   position: absolute;
-  top: 30vh;
-  left: 15vw;
+  top: 50vh;
+  left: 20vw;
         width: 0px;
         height: 0px;
-        border-right: 50px solid transparent;
-        border-top: 50px solid #8C5419;
-        border-left: 50px solid #8C5419;
-        border-bottom: 50px solid #8C5419;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
+        border-right: 7vh solid transparent;
+        border-top: 7vh solid #8C5419;
+        border-left: 7vh solid #8C5419;
+        border-bottom: 7vh solid #8C5419;
+        border-top-left-radius: 7vh;
+        border-top-right-radius: 7vh;
+        border-bottom-left-radius: 7vh;
+        border-bottom-right-radius: 7vh;
 }
-#step2{
+  @media screen and (max-width:414px){
+    #step1{
+      position: absolute;
+      top: 64vh;
+      left: 40vw;
+            width: 0px;
+            height: 0px;
+            border-right: 4vh solid transparent;
+            border-top: 4vh solid #8C5419;
+            border-left: 4vh solid #8C5419;
+            border-bottom: 4vh solid #8C5419;
+            border-top-left-radius: 4vh;
+            border-top-right-radius: 4vh;
+            border-bottom-left-radius: 4vh;
+            border-bottom-right-radius: 4vh;
+          }
+  }
+#step1SIDE{
   position: absolute;
-  top: 60vh;
+  top: 50vh;
   left: 5vw;
   cursor: pointer;
         width: 0px;
         height: 0px;
-        border-right: 25px solid #421e15;
-        border-top: 25px solid #421e15;
-        border-left: 25px solid #421e15;
-        border-bottom: 25px solid transparent;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
+        border-right: 4vh solid transparent;
+        border-top: 4vh solid #421e15;
+        border-left: 4vh solid #421e15;
+        border-bottom: 4vh solid #421e15;
+        border-top-left-radius: 4vh;
+        border-top-right-radius: 4vh;
+        border-bottom-left-radius: 4vh;
+        border-bottom-right-radius: 4vh;
 }
+  @media screen and (max-width:414px){
+      #step1SIDE{
+        position: absolute;
+        top: 60vh;
+        left: 5vw;
+        cursor: pointer;
+              width: 0px;
+              height: 0px;
+              border-right: 3vh solid transparent;
+              border-top: 3vh solid #421e15;
+              border-left: 3vh solid #421e15;
+              border-bottom: 3vh solid #421e15;
+              border-top-left-radius: 3vh;
+              border-top-right-radius: 3vh;
+              border-bottom-left-radius: 3vh;
+              border-bottom-right-radius: 3vh;
+      }
+    }
+#step2{
+      position: absolute;
+      top: 70vh;
+      left: 5vw;
+      cursor: pointer;
+      width: 0px;
+      height: 0px;
+      border-right: 4vh solid #421e15;
+      border-top: 4vh solid #421e15;
+      border-left: 4vh solid #421e15;
+      border-bottom: 4vh solid transparent;
+      border-radius: 4vh;
+}
+  @media screen and (max-width:414px){
+    #step2{
+      position: absolute;
+      top: 70vh;
+      left: 5vw;
+      cursor: pointer;
+      width: 0px;
+      height: 0px;
+      border-right: 3vh solid #421e15;
+      border-top: 3vh solid #421e15;
+      border-left: 3vh solid #421e15;
+      border-bottom: 3vh solid transparent;
+      border-radius: 3vh;
+    }
+  }
 #step3{
   position: absolute;
-  top: 80vh;
+  top: 90vh;
   left: 5vw;
   cursor: pointer;
         width: 0px;
         height: 0px;
-        border-right: 25px solid #421e15;
-        border-top: 25px solid #421e15;
-        border-left: 25px solid transparent;
-        border-bottom: 25px solid #421e15;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
+        border-right: 4vh solid #421e15;
+        border-top: 4vh solid #421e15;
+        border-left: 4vh solid transparent;
+        border-bottom: 4vh solid #421e15;
+        border-radius: 4vh;
+}
+  @media screen and (max-width:414px){
+    #step3{
+    position: absolute;
+    top: 80vh;
+    left: 5vw;
+    cursor: pointer;
+          width: 0px;
+          height: 0px;
+          border-right: 3vh solid #421e15;
+          border-top: 3vh solid #421e15;
+          border-left: 3vh solid transparent;
+          border-bottom: 3vh solid #421e15;
+          border-radius: 3vh;
+        }
 }
 #step4{
   position: absolute;
-  top: 100vh;
+  top: 110vh;
   left: 5vw;
   cursor: pointer;
         width: 0px;
         height: 0px;
-        border-right: 25px solid #421e15;
-        border-top: 25px solid transparent;
-        border-left: 25px solid #421e15;
-        border-bottom: 25px solid #421e15;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
+        border-right: 4vh solid #421e15;
+        border-top: 4vh solid transparent;
+        border-left: 4vh solid #421e15;
+        border-bottom: 4vh solid #421e15;
+        border-radius: 4vh;
 }
+  @media screen and (max-width: 414px){
+    #step4{
+      position: absolute;
+      top: 90vh;
+      left: 5vw;
+      cursor: pointer;
+            width: 0px;
+            height: 0px;
+            border-right: 3vh solid #421e15;
+            border-top: 3vh solid transparent;
+            border-left: 3vh solid #421e15;
+            border-bottom: 3vh solid #421e15;
+            border-radius: 3vh;
+    }
+  }
 #backArrow{
-  color: #421e15;
+  color: #8C5419;
   font-size: 72pt;
   font-family: museo-slab, serif;
   font-weight: 600;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   left:0;
-  top:0;
+  top:123vh;
 }
+  @media screen and (max-width: 414px){
+    #backArrow{
+      top:113vh;
+    }
+  }
 #nextArrow{
   color: #421e15;
-  font-size: 72pt;
+  font-size: 100pt;
   font-family: museo-slab, serif;
   font-weight: 600;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   right:0;
-  top:0;
+  top:120vh;
 }
+  @media screen and (max-width: 414px){
+    #nextArrow{
+      top: 110vh;
+    }
+  }
 </style>
 </head>
 <body>
@@ -195,6 +383,9 @@ p2{
   <div id="step1">
       <h4> Step 1</h4>
   </div>
+  <div id="step1SIDE">
+      <a href="STEP1.html">Step 1 </a>
+  </div>
       <p2>Preheat oven to 350°F.  Liberally butter three 9” cake pans, and tap
         a tablespoon of flour around in each, until evenly coated.  Line with
         a round sheet of parchment paper.</p2>
@@ -213,7 +404,7 @@ p2{
 </span>
 <script type="text/javascript">
 document.getElementById("backArrow").onclick = function (){
-  location.href = "recipe_trial2_pg1.html";
+  location.href = "ingredients.html";
   }
 document.getElementById("nextArrow").onclick = function (){
   location.href = "STEP2.html";
