@@ -1,5 +1,6 @@
 <!doctype.html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <title> Chocolate Cake Inspired by Matilda</title>
 <h1>Chocolate Cake</h1>
@@ -8,36 +9,70 @@
 <link rel="stylesheet" href="https://use.typekit.net/wzp0nln.css">
 <style>
   body{
+  margin:0%;
   background-color: #fff2e0;
   }
+    @media screen and (max-width: 375px){
+      body{
+        margin: 0%;
+      }
+    }
   h1{
-  color: #421e15;
-  font-size: 10vh;
-  text-align: center;
-  font-family: blenny, sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-weight: 500;
+    color: #421e15;
+    font-size: 10vh;
+    text-align: center;
+    font-family: blenny, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-weight: 500;
+  }
+  @media screen and (max-width: 375px){
+    h1{
+    color: #421e15;
+    font-size: 10vh;
+    text-align: center;
+    font-family: blenny, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 10vh;
+      }
   }
   h2{
     color: #421e15;
-    display: block;
     position: absolute;
-    margin-left: auto;
-    margin-right: -50%;
+    margin-top: 0vh;
     left: 50%;
-    top: 15%;
     transform: translate(-50%, -50%);
     font-size: 5vh;
     font-family: museo-slab, serif;
   }
-  h3{
-  margin: 20px;
-  font-size: 16pt;
-  color: #421e15;
-  font-family: museo-slab, serif;
-  font-weight: bolder;
+    @media screen and (max-width: 375px){
+    h2{
+    color: #421e15;
+    position: absolute;
+    left: 50%;
+    top: 25vh;
+    transform: translate(-50%, -50%);
+    font-size: 5vh;
+    font-family: museo-slab, serif;
+    }
   }
+  h3{
+    margin: 20px;
+    font-size: 16pt;
+    color: #421e15;
+    font-family: museo-slab, serif;
+    font-weight: bolder;
+  }
+  @media screen and (max-width: 375px){
+    h3{
+      margin: 0.5em;
+      font-size: 3vh;
+      color: #421e15;
+      font-family: museo-slab, serif;
+      font-weight: bolder;
+      }
+    }
   #ingr{
     position: absolute;
     top: 50vh;
@@ -49,15 +84,38 @@
     border-width: medium;
     border-color: #421e15;
 }
+    @media screen and (max-width: 375px){
+      #ingr{
+        position: absolute;
+        top: 35vh;
+        right:8vw;
+        width:85vw;
+        height: 33vh;
+        border-radius: 10px;
+        border-style: dotted;
+        border-width: medium;
+        border-color: #421e15;
+      }
+    }
   ul{
   position: relative;
-  line-height: 20pt;
+  line-height: ;
   height: 50vh;
   left: 4vw;
   width: 200px;
-  font-size: 14pt;
+  font-size: 2.5vh;
   color: #421e15;
-  font-family: "Courier", serif;
+  font-family: museo-slab, serif;
+}
+  @media screen and (max-width: 375px){
+  ul{
+    position: relative;
+    left: 15vw;
+    line-height: 1em;
+    margin: 1em;
+    font-size: 2vh;
+    color: #421e15;
+  }
 }
   h4{
   width:200px;
@@ -69,6 +127,20 @@
   font-family: museo-slab, serif;
   font-weight: 600;
 }
+@media screen and (max-width: 375px){
+  h4{
+    width:200px;
+    height: 40px;
+    position: absolute;
+    margin:0vh;
+    top: 1vh;
+    font-size: 4vh;
+    left: 1em;
+    color: #8C5419;
+    font-family: museo-slab, serif;
+    font-weight: 600;
+  }
+}
   a{
   width:100px;
   height: 20px;
@@ -79,8 +151,20 @@
   font-family: museo-slab, serif;
   font-weight: 600;
 }
+@media screen and (max-width: 375px){
+  a{
+  width:100px;
+  height: 20px;
+  position: absolute;
+  font-size: 2vh;
+  left: 2em;
+  color: #421e15;
+  font-family: museo-slab, serif;
+  font-weight: 600;
+  }
+}
   p2{
-  margin: 0vh 5vh 40vh 5vh;
+  margin: 5vh 5vw 40vh 5vw;
   position: absolute;
   top: 60vh;
   left: 20vw;
@@ -90,51 +174,103 @@
   font-family: museo-slab, serif;
   font-weight: 300;
 }
-
-  #step1{
+@media screen and (max-width:375px){
+  p2{
+    margin: 0vh;
+    top: 88vh;
+    position: absolute;
+    left: 40vw;
+    width: 10em;
+    font-size: 3vh;
+    color: #8C5419;
+    font-family: museo-slab, serif;
+    font-weight: 300;
+    }
+  }
+#step1{
   position: absolute;
   top: 50vh;
   left: 5vw;
   cursor: pointer;
         width: 0px;
         height: 0px;
-        border-right: 25px solid transparent;
-        border-top: 25px solid #421e15;
-        border-left: 25px solid #421e15;
-        border-bottom: 25px solid #421e15;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;}
+        border-right: 3vh solid transparent;
+        border-top: 3vh solid #421e15;
+        border-left: 3vh solid #421e15;
+        border-bottom: 3vh solid #421e15;
+        border-radius: 3vh;
+  }
+        @media screen and (max-width:375px){
+      #step1{
+        position: absolute;
+        top: 75vh;
+        left: 5vw;
+        cursor: pointer;
+              width: 0px;
+              height: 0px;
+              border-right: 3vh solid transparent;
+              border-top: 3vh solid #421e15;
+              border-left: 3vh solid #421e15;
+              border-bottom: 3vh solid #421e15;
+              border-top-left-radius: 3vh;
+              border-top-right-radius: 3vh;
+              border-bottom-left-radius: 3vh;
+              border-bottom-right-radius: 3vh;
+      }
+    }
   #step2{
   position: absolute;
   top: 30vh;
   left: 15vw;
         width: 0px;
         height: 0px;
-        border-right: 50px solid #8C5419;
-        border-top: 50px solid #8C5419;
-        border-left: 50px solid #8C5419;
-        border-bottom: 50px solid transparent;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;}
-        #step2SIDE{
+        border-right: 7vh solid #8C5419;
+        border-top: 7vh solid #8C5419;
+        border-left: 7vh solid #8C5419;
+        border-bottom: 7vh solid transparent;
+        border-radius: 7vh;
+      }
+      @media screen and (max-width:375px){
+        #step2{
+          position: absolute;
+          top: 78vh;
+          left: 40vw;
+                width: 0px;
+                height: 0px;
+                border-right: 3vh solid #8c5419;
+                border-top: 3vh solid #8C5419;
+                border-left: 3vh solid #8C5419;
+                border-bottom: 3vh solid transparent;
+                border-radius: 3vh;
+              }
+      }
+      #step2SIDE{
         position: absolute;
         top: 70vh;
         left: 5vw;
         cursor: pointer;
               width: 0px;
               height: 0px;
-              border-right: 25px solid #421e15;
-              border-top: 25px solid #421e15;
-              border-left: 25px solid #421e15;
-              border-bottom: 25px solid transparent;
-              border-top-left-radius: 25px;
-              border-top-right-radius: 25px;
-              border-bottom-left-radius: 25px;
-              border-bottom-right-radius: 25px;
+              border-right: 4vh solid #421e15;
+              border-top: 4vh solid #421e15;
+              border-left: 4vh solid #421e15;
+              border-bottom: 4vh solid transparent;
+              border-radius: 4vh;
+        }
+        @media screen and (max-width:375px){
+          #step2SIDE{
+            position: absolute;
+            top: 85vh;
+            left: 5vw;
+            cursor: pointer;
+            width: 0px;
+            height: 0px;
+            border-right: 2vh solid #421e15;
+            border-top: 2vh solid #421e15;
+            border-left: 2vh solid #421e15;
+            border-bottom: 2vh solid transparent;
+            border-radius: 2vh;
+          }
         }
   #step3{
   position: absolute;
@@ -143,15 +279,27 @@
   cursor: pointer;
         width: 0px;
         height: 0px;
-        border-right: 25px solid #421e15;
-        border-top: 25px solid #421e15;
-        border-left: 25px solid transparent;
-        border-bottom: 25px solid #421e15;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
+        border-right: 4vh solid #421e15;
+        border-top: 4vh solid #421e15;
+        border-left: 4vh solid transparent;
+        border-bottom: 4vh solid #421e15;
+        border-radius: 4vh;
 }
+  @media screen and (max-width:375px){
+  #step3{
+  position: absolute;
+  top: 95vh;
+  left: 5vw;
+  cursor: pointer;
+        width: 0px;
+        height: 0px;
+        border-right: 2vh solid #421e15;
+        border-top: 2vh solid #421e15;
+        border-left: 2vh solid transparent;
+        border-bottom: 2vh solid #421e15;
+        border-radius: 2vh;
+      }
+    }
   #step4{
   position: absolute;
   top: 110vh;
@@ -159,14 +307,26 @@
   cursor: pointer;
         width: 0px;
         height: 0px;
-        border-right: 25px solid #421e15;
-        border-top: 25px solid transparent;
-        border-left: 25px solid #421e15;
-        border-bottom: 25px solid #421e15;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
+        border-right: 4vh solid #421e15;
+        border-top: 4vh solid transparent;
+        border-left: 4vh solid #421e15;
+        border-bottom: 4vh solid #421e15;
+        border-radius: 4vh;
+}
+  @media screen and (max-width: 375px){
+  #step4{
+    position: absolute;
+    top: 105vh;
+    left: 5vw;
+    cursor: pointer;
+          width: 0px;
+          height: 0px;
+          border-right: 2vh solid #421e15;
+          border-top: 2vh solid transparent;
+          border-left: 2vh solid #421e15;
+          border-bottom: 2vh solid #421e15;
+          border-radius: 2vh;
+  }
 }
   #backArrow{
   color: #8C5419;
@@ -178,6 +338,11 @@
   left:0;
   top:123vh;
 }
+    @media screen and (max-width: 375px){
+  #backArrow{
+    top:183vh;
+  }
+}
   #nextArrow{
   color: #421e15;
   font-size: 100pt;
@@ -187,6 +352,11 @@
   position: absolute;
   right:0;
   top:120vh;
+}
+  @media screen and (max-width: 375px){
+  #nextArrow{
+    top: 180vh;
+  }
 }
 </style>
 </head>
