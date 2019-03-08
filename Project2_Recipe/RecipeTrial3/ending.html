@@ -1,0 +1,113 @@
+<!doctype.html>
+<html>
+<head>
+<title> Enjoy!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://use.typekit.net/wzp0nln.css">
+<link rel="stylesheet" href="https://use.typekit.net/wzp0nln.css">
+<style>
+body{
+  background-color: #fff2e0;
+}
+p{
+  margin:0;
+  color:#421e15;
+  text-align: center;
+  font-size: 10vh;
+  font-family: blenny, serif;
+  font-weight: 400;
+  z-index: 0;
+}
+@media screen and (max-width: 414px){
+  p{
+    margin:0;
+    color:#421e15;
+    text-align: center;
+    font-size: 8vh;
+    font-family: blenny, serif;
+    font-weight: 400;
+    z-index: 0;
+  }
+}
+h1{
+  position: absolute;
+  cursor: default;
+  left:80vw;
+  width: 20vw;
+  top: 115vh;
+  color: #421e15;
+  font-size: 3vh;
+  font-family: museo-slab, serif;
+  font-weight: 600;
+}
+@media screen and (max-width: 414px){
+  h1{
+    top: 93vh;
+    width: 25vw;
+    left: 68vw;
+  }
+}
+  img{
+    position: absolute;
+    width: 70vw;
+    top: 45vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+@media screen and (max-width: 414px){
+  img{
+    position: absolute;
+    width: 80vw;
+    top: 50vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+#backArrow{
+  color: #8C5419;
+  font-size: 15vh;
+  font-family: museo-slab, serif;
+  font-weight: 600;
+  cursor: pointer;
+  position: absolute;
+  left:0;
+  top:103vh;
+}
+  @media screen and (max-width: 414px){
+    #backArrow{
+      top: 80vh;
+    }
+  }
+#nextArrow{
+  margin-left: 10vh;
+  color: #421e15;
+  font-size: 20vh;
+  font-family: museo-slab, serif;
+  font-weight: 600;
+  cursor: pointer;
+  position: absolute;
+  right:0;
+  top:100vh;
+}
+@media screen and (max-width: 414px){
+  #nextArrow{
+    top: 77vh;
+  }
+}
+</style>
+</head>
+<body>
+<p> Enjoy your cake! &#9787;</p>
+<img src = "cake.jpg" alt="Boy in Matilda eating Cake">
+<div id= "nextArrow"> &#8594;</div>
+<div id= "backArrow">&#8592;</div>
+<h1>Make another one?</h1>
+<script type="text/javascript">
+document.getElementById("backArrow").onclick = function (){
+  location.href = "STEP4.html";}
+document.getElementById("nextArrow").onclick = function (){
+  location.href = "recipe_trial3_pg1.html";
+}
+</script>
+</body>
+</html>
