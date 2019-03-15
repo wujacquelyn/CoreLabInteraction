@@ -5,6 +5,9 @@
   font-weight: normal;
   font-size: 24pt;
 }
+body{
+  margin:0;
+}
 window{
   height: 5000px;
   width: 100%;

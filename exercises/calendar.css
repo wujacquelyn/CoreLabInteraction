@@ -1,0 +1,200 @@
+.calendar{
+  background-color:#F2F2F2;
+  height:100%;
+  font-family: "Arial",sans-serif;
+}
+p1{
+  font-size: 4em;
+  font-family: "Arial",sans-serif;
+}
+.weekdays{
+  z-index:0;
+  display: flex;
+  height: 10%;
+  font-weight: bold;
+  border-bottom: solid;
+  border-color: black;
+  border-width: thin;
+}
+.sun{
+display: flex;
+flex-direction: column;
+flex:1;
+justify-content: flex-end;
+}
+.mon{
+display: flex;
+flex-direction: column;
+flex:1;
+justify-content: flex-end;
+}
+.tues{
+display: flex;
+flex-direction: column;
+flex:1;
+justify-content: flex-end;
+}
+.wed{
+display: flex;
+flex-direction: column;
+flex:1;
+justify-content: flex-end;
+}
+.thurs{
+display: flex;
+flex-direction: column;
+flex:1;
+justify-content: flex-end;
+}
+.fri{
+display: flex;
+flex-direction: column;
+flex:1;
+justify-content: flex-end;
+}
+.sat{
+justify-content: flex-end;
+display: flex;
+flex-direction: column;
+flex:1;
+justify-content: flex-end;
+}
+.week1{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  border-bottom: solid;
+  border-color: black;
+  border-width: thin;
+}
+.week2{
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+  border-bottom: solid;
+  border-color: black;
+  border-width: thin;
+}
+.week3{
+  justify-content:space-between;
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid;
+  border-color: black;
+  border-width: thin;
+}
+.week4{
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+  border-bottom: solid;
+  border-color: black;
+  border-width: thin;
+}
+.week5{
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+  border-bottom: solid;
+  border-color: black;
+  border-width: thin;
+}
+.week6{
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+}
+.day{
+  margin:0;
+  flex-wrap: wrap;
+  height:15%;
+  width: 14.28%;
+  z-index:1;
+}
+    @media only screen and (max-width 600px;){
+      .calendar{
+        background-color:#F2F2F2;
+        height:100%;
+        font-family: "Arial",sans-serif;
+      }
+      p1{
+        font-size: 4em;
+        font-family: "Arial",sans-serif;
+      }
+      .weekdays{
+        z-index:0;
+        display: none;
+      }
+      .sun{
+      display: none;
+      }
+      .mon{
+      display: none;
+      }
+      .tues{
+      display: none;
+      }
+      .wed{
+      display: none;
+      }
+      .thurs{
+      display: none;
+      }
+      .fri{
+      display: none;
+      }
+      .sat{
+      justify-content: none;
+      display: flex;
+      }
+      .week1{
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-end;
+        border-bottom: solid;
+        border-color: black;
+        border-width: thin;
+      }
+      .week2{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: row;
+        border-bottom: solid;
+        border-color: black;
+        border-width: thin;
+      }
+      .week3{
+        justify-content:space-between;
+        display: flex;
+        flex-direction: row;
+        border-bottom: solid;
+        border-color: black;
+        border-width: thin;
+      }
+      .week4{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: row;
+        border-bottom: solid;
+        border-color: black;
+        border-width: thin;
+      }
+      .week5{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: row;
+  
+      }
+      .week6{
+        display: flex;
+        justify-content:flex-start;
+        flex-direction: row;
+      }
+      .day{
+        margin:0;
+        flex-wrap: wrap;
+        height:15%;
+        width: 100%;
+        z-index:1;
+      }
+    }
