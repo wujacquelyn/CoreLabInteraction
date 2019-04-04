@@ -1,0 +1,143 @@
+body{
+  background-color: #211f41;
+}
+h1{
+  position: absolute;
+  top:10vh;
+  left: 10vw;
+  color: #b20000;
+  font-size: 4em;
+  font-family: gigalypse, sans-serif;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+button{
+  position: absolute;
+  top: 80vh;
+  left:25vw;
+  background-color: black;
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 3em;
+  cursor: pointer;
+}
+h2{
+  position: absolute;
+  top: 60vh;
+  left: 70vw;
+  color: #b20000;
+  font-size: 2em;
+  font-family: gigalypse, sans-serif;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+#girl1{
+  position: absolute;
+  top:45vh;
+  left:45vw;
+}
+#girl2{
+  position: absolute;
+  opacity: 0;
+  top:45vh;
+  left:45vw;
+}
+#girl2:hover{
+  opacity:1;
+}
+#bush{
+  position: absolute;
+  left:40vw;
+  top: 65vh;
+}
+#ghost{
+  width: 156px;
+  height: 152px;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(100vw 0, 0);
+    transform: translate3d(100vw, 0, 0);
+  }
+
+}
