@@ -3,7 +3,7 @@ body{
 }
 h1{
   position: absolute;
-  top:10vh;
+  top:45vh;
   left: 10vw;
   color: #b20000;
   font-size: 4em;
@@ -47,8 +47,8 @@ h1{
 }
 button{
   position: absolute;
-  top: 80vh;
-  left:25vw;
+  top: 30vh;
+  left:46vw;
   background-color: black;
   color: white;
   font-family: "Arial", sans-serif;
@@ -57,10 +57,10 @@ button{
 }
 h2{
   position: absolute;
-  top: 60vh;
-  left: 70vw;
+  top: 65vh;
+  left: 75vw;
   color: #b20000;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: gigalypse, sans-serif;
   -webkit-animation-name: pulse;
   animation-name: pulse;
