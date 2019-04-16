@@ -45,8 +45,8 @@ var countryTemp = 45
 function Convert(currentTemp){
   return (currentTemp - 32)*(5/9)
 }
-console.log("The current temperature in New York City is " + Convert(43) + " °C at " + now)
-console.log("The current temperature in Tokyo is " +  Convert (45) + " °C at " + now)
+console.log("The current temperature in New York City is " + Convert(43) + "°C at " + now)
+console.log("The current temperature in Tokyo is " +  Convert (45) + "°C at " + now)
 //the loop
 
 for (var i = 0; i < 8; i++){
@@ -58,3 +58,12 @@ for (var i = 0; i < 8; i++){
   }
 }
 //math.random
+function bgChange(){
+  var color1 = Math.floor(Math.random() * 256);
+  var color2 = Math.floor(Math.random() * 256);
+  var color3 = Math.floor(Math.random() * 256);
+  var colorBG = "rgb(" + color1 + "," + color2 + "," + color3 + ")"
+  document.body.style.background = colorBG;
+}
+  console.log(bgChange);
+  bgChange()
