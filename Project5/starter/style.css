@@ -1,0 +1,26 @@
+.cityName{
+  font-family: "Helvetica", sans-serif;
+  font-size: 2em;
+}
+.cityName#Shanghai{
+  position: absolute;
+  top:0;
+  left:0;
+}
+.cityName#NewYork{
+position: absolute;
+top: 0;
+left: 50vw;
+}
+#sh{
+  font-size: 1.5em;
+  position: absolute;
+  top: 10vh;
+  left: 0vw;
+}
+#ny{
+  font-size: 1.5em;
+  position: absolute;
+  top: 10vh;
+  left: 50vw;
+}
