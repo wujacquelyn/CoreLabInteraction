@@ -1,0 +1,60 @@
+<!doctype.html>
+<html>
+  <head>
+    <style>
+.moon {
+z-index: 0;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+position: absolute;
+left:0;
+top:0;
+background-color: white;
+}
+
+/*::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0;
+  background-color: gray;
+  width: 50%; height: 100%;
+  animation: flip 2s 1s steps(2) infinite alternate;
+}
+}
+*/
+.phase{
+position: absolute;
+left:0px;
+top:0;
+z-index: 1;
+width: 100px;
+height: 100px;
+border-radius: 100px;
+background-color: gray;
+animation-name: flip;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-duration: 4s;
+backface-visibility: hidden;
+}
+@keyframes flip{
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}
+body {
+background-color:  gray;
+}
+  </style>
+  </head>
+
+  <body>
+  <div class="moon"></div>
+  <div class="phase"></div>
+  </body>
+</html>

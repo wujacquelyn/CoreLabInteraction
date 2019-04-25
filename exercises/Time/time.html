@@ -1,14 +1,21 @@
 <!doctype.html>
 <html>
-<head>
-  <style></style>
-</head>
-<body>
-  <script>
-  var now = new Date();
-  var hr = now.getHours()
-  var min = now.getMinutes()
-  var sec = now.getSeconds()
-  </script>
-</body>
+  <head>
+    <link href="time.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sky">
+        <div id="circle"></div>
+        <div id="cres"><img src="moon.svg"></div>
+      </div>
+      <div class="sea">
+        <div id="boat"><img src="boat.svg"></div>
+      </div>
+    <h2 id="time"></h2>
+    <h3 id="date"></h3>
+    </div>
+    <script src="time.js"></script>
+  </body>
 </html>
