@@ -7,7 +7,6 @@ var sec = now.getSeconds()
 var day = now.getDate()
 var weekDay = now.getDay()
 var month = now.getMonth()
-
 function updateTime(){
   timeHolder.innerHTML = hr+":"+min+":"+sec
   dateHolder.innerHTML = month+"/"+day+"weekday: "+weekDay
@@ -43,11 +42,11 @@ if (hr<3,hr>19){
     document.querySelector('.sea').style.backgroundColor = "#72E9FF"
     document.getElementById('circle').style.backgroundColor= "#FEF9D1#"
   }
-  //Moving boat
-//function moveBoat(){
-  // if (sec++ && sec<60){
-    //document.getElementById('boat').style.left =sec+"vw"
-  //}else if(sec++ && sec==0){
-    //document.getElementById('boat').style.left ="0vw"
-  //}
-  //}setInterval(moveBoat, 1000)
+//Moving boat
+function moveBoat(){
+   if (sec++ && sec<60){
+  document.getElementById('boat').style.left =sec+"vw"
+}else if(sec++ && sec==0){
+  document.getElementById('boat').style.left ="0vw"
+  }
+  }setInterval(moveBoat, 1000)

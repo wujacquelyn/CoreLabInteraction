@@ -73,7 +73,7 @@ function lmWeather(){
     dataType: 'jsonp',
     success: function(results){
       airquality = results.data.aqi;
-      ozone - results.data.iaqi.o3.v;
+      ozone = results.data.iaqi.o3.v;
       pm10 = results.data.iaqi.pm10.v;
       pm25 = results.data.iaqi.pm25.v;
         aguaWeather();
@@ -94,7 +94,7 @@ $.ajax({
     airquality = results.data.aqi;
     carbon = results.data.iaqi.co.v;
     nitrodio = results.data.iaqi.no2.v;
-    ozone - results.data.iaqi.o3.v;
+    ozone = results.data.iaqi.o3.v;
     pm25 = results.data.iaqi.pm25.v;
       queensWeather();
   }
