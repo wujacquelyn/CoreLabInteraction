@@ -106,11 +106,5 @@ function queensWeather(){
   $('#qnyO3').append(' ozone: ' + ozone);
   $('#qnyPM25').append(' pm25: ' + pm25);
 }
-var dots = getElementsByClassName('dot')
-let start = Date.now();
-let timer = setInterval (function(){
-  let timePassed = Date.now() - start;
-  dots.style.transform = 'translateY(airquality + %)'
-})
 //hightest pm10[https://api.waqi.info/feed/@7243/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8]
 })
