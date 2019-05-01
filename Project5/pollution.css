@@ -1,190 +1,37 @@
-body{
-font-family: "Helvetica", sans-serif;
+html, body{
 }
+#delhiAPI{
+}
+#delhiCO{
 
-.cityName{
-  position: absolute;
-  font-size: 1.3em;
-  font-weight: bold;
 }
-.pollutant{
-  position: absolute;
-  top:10vh;
-  margin-top: 2em;
-  font-size: 1em;
-  line-height: 1.5em;
+#delhiNO2{
 }
-.pollutant#SAM{
-  left:0vw;
-}
-.pollutant#DIF{
-  left: 20vw;
-}
-.pollutant#LMA{
-  left: 40vw;
-}
-.pollutant#SDMA{
-  left: 60vw;
-}
-.pollutant#QC{
-  left: 82vw;
-}
+#delhiO3{
 
-#Delhi{
-  top:0;
-  left:0;
-}
-#Mexico{
-  left: 20vw;
-  top: 0;
-}
-#LaMan{
-  top:0;
-  left: 40vw;
-}
-#Aguascalientes{
-  top: 0;
-  left:60vw;
-}
-#QueensCollege{
-  top: 0;
-  left:82vw;
-}
-/* wave CSS*/
-#wave-container {
-  position:relative;
-  margin: 0;
-  height: 36%;
-   width: 132%;
-}
-.dot {
-/*  transform-origin: 50% 50%;*/
-  height: 6vw;
-  width: 6vw;
-  border-radius : 50%;
-  top:0; background-color: #C0392B;
-  position: absolute;
-  -webkit-animation:vertical-movement 2.5s infinite ease-in-out;
-  -moz-animation:vertical-movement 2.5s infinite ease-in-out;
-  -ms-animation:vertical-movement 2.5s infinite ease-in-out;
-  -o-animation:vertical-movement 2.5s infinite ease-in-out;
-  animation:vertical-movement 2.5s infinite ease-in-out;
-}
-  #d1 {
-    left:12%;
-    -webkit-animation-delay:-0.3s;
-    -moz-animation-delay:-0.3s;
-    -ms-animation-delay:-0.3s;
-    -o-animation-delay:-0.3s;
-    animation-delay:-0.3s;
-    opacity: 0.1
   }
-  #d2 {
-    left:18%;
-    -webkit-animation-delay:-0.6s;
-    -moz-animation-delay:-0.6s;
-    -ms-animation-delay:-0.6s;
-    -o-animation-delay:-0.6s;
-    animation-delay:-0.6s;opacity: 0.2
-    }
-  #d3 {
-    left:24%;
-     -webkit-animation-delay:-0.9s;
-     -moz-animation-delay:-0.9s;
-     -ms-animation-delay:-0.9s;
-    -o-animation-delay:-0.9s;
-    animation-delay:-0.9s;opacity: 0.3
-       }
-    #d4 {
-    left:30%;
-    -webkit-animation-delay:-1.2s;
-    -moz-animation-delay:-1.2s;
-    -ms-animation-delay:-1.2s;
-    -o-animation-delay:-1.2s;
-    animation-delay:-1.2s;
-    opacity: 0.4
-    }
-    #d5 {
-    left:36%;
-    -webkit-animation-delay:-1.5s;
-    -moz-animation-delay:-1.5s;
-    -ms-animation-delay:-1.5s;
-    -o-animation-delay:-1.5s;
-    animation-delay:-1.5s;
-    opacity: 0.5
-    }
-    #d6 {
-    left:42%;
-    -webkit-animation-delay:-1.8s;
-    -moz-animation-delay:-1.8s;
-    -ms-animation-delay:-1.8s;
-    -o-animation-delay:-1.8s;
-    animation-delay:-1.8s;
-    opacity: 0.6
-    }
-    #d7 {
-    left:48%;
-    -webkit-animation-delay:-2.1s;
-    -moz-animation-delay:-2.1s;
-    -ms-animation-delay:-2.1s;
-    -o-animation-delay:-2.1s;
-    animation-delay:-2.1s;
-    opacity: 0.7
-    }
-    #d8 {
-    left:54%;
-    -webkit-animation-delay:-2.4s;
-    -moz-animation-delay:-2.4s;
-    -ms-animation-delay:-2.4s;
-    -o-animation-delay:-2.4s;
-    animation-delay:-2.4s;opacity: 0.8
-    }
-    #d9 {
-    left:60%;
-    -webkit-animation-delay:-2.7s;
-    -moz-animation-delay:-2.7s;
-    -ms-animation-delay:-2.7s;
-    -o-animation-delay:-2.7s;
-    animation-delay:-2.7s;
-    opacity: 0.9
-    }
-    #d10 {
-    left:66%;
-    -webkit-animation-delay:-3s;
-    -moz-animation-delay:-3s;
-    -ms-animation-delay:-3s;
-    -o-animation-delay:-3s;
-    animation-delay:-3s;
-    opacity: 1}
-    .last-dot {
-    transform-origin: 50% 50%;
-    height: 6%;
-    width: 6%;
-    border-radius : 50%;
-    }
-    #head-dot {
-      height: 6%;
-      width: 6%;
-      border-radius: 50%
-      }
-    @-webkit-keyframes vertical-movement {
-      0%,100% {
-         -webkit-transform: translateY(0%); }
-      50% {
-        -webkit-transform: translateY(30%);
-         } }
-     @keyframes vertical-movement {
-       0%,100% {
-        -webkit-transform: translateY(0%);
-       -moz-transform: translateY(0%);
-       -ms-transform: translateY(0%);
-        -o-transform: translateY(0%);
-        transform: translateY(0%); }
-       50% {
-        -webkit-transform: translateY(30%);
-        -moz-transform: translateY(30%);
-        -ms-transform: translateY(30%);
-       -o-transform: translateY(30%);
-       transform: translateY(30%);
-       }
-    }
+#delhiPM10{
+
+  }
+#delhiPM25{
+
+}
+#delhiSO2{
+  }
+
+  .content {
+  margin: auto;
+  text-align: center;
+  }
+
+  #c {
+  margin: auto;
+  }
+
+  .hexagon {
+  width: 70vw;
+  height: 70vw;
+  margin: auto;
+  padding: 0;
+  display:inline-block;
+  }

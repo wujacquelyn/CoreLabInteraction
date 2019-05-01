@@ -5,12 +5,11 @@ var nitrodio
 var pm10 //particle matter VALUES
 var pm25 //particle matter values
 var so2
-
-
 $(document).ready(function(){
 //hightest CO, INDIA
     $.ajax({
         url: "https://api.waqi.info/feed/@10707/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8",
+        dataType: 'jsonp',
         success: function(results){
             airquality = results.data.aqi;
             carbon = results.data.iaqi.co.v;
@@ -19,35 +18,50 @@ $(document).ready(function(){
             pm10 = results.data.iaqi.pm10.v;
             pm25 = results.data.iaqi.pm25.v;
             so2 = results.data.iaqi.so2.v;
-            delhiWeather();
         }
     });
-    function delhiWeather(){
-        $('#delhiAPI').append(' aqi: ' + airquality);
-        $('#delhiCO').append(' carbon: ' + carbon);
-        $('#delhiNO2').append(' nitrogen dioxide: ' + nitrodio);
-        $('#delhiO3').append(' ozone: ' + ozone);
-        $('#delhiPM10').append(' pm10: ' + pm10);
-        $('#delhiPM25').append(' pm25: ' + pm25);
-        $('#delhiSO2').append(' so2: ' + so2);
-    }
-
+    //*function delhiWeather(){
+        //$('#delhiAPI').append(' aqi: ' + airquality);
+        //$('#delhiCO').append(' carbon: ' + carbon);
+        //$('#delhiNO2').append(' nitrogen dioxide: ' + nitrodio);
+        //$('#delhiO3').append(' ozone: ' + ozone);
+        //$('#delhiPM10').append(' pm10: ' + pm10);
+        //$('#delhiPM25').append(' pm25: ' + pm25);
+        //$('#delhiSO2').append(' so2: ' + so2);}
+    //Animation
+    //let xs = []
+    //for (var i = 0; i <=1500; i++){
+      //xs.push(i)}
+    //let t = 0
+    //function animate(){
+      //let points = xs.map(x => {
+        //let y =  500 + airquality1 * Math.sin((x + t) / 50)
+        //return[x, y]
+      //})
+      //turn points into linec//
+      //let path = "M" + points.map(p =>{
+        //return p[0] + "," + p[1]
+      //}).join(" L")
+      //document.querySelector("path").setAttribute("d", path)
+      //requestAnimationFrame(animate)
+      //t += 1
+    //}
+    //animate()
 //highest no2[DIF, San Luis Potosí, Mexico]
   $.ajax({
       url: "https://api.waqi.info/feed/@10159/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8",
       dataType: 'jsonp',
       success: function(results){
-          airquality = results.data.aqi;
-          nitrodio = results.data.iaqi.no2.v;
-          pm10 = results.data.iaqi.pm10.v;
-          difWeather();
+          airquality2 = results.data.aqi;
+          //nitrodio = results.data.iaqi.no2.v;
+          //pm10 = results.data.iaqi.pm10.v;
         }
       });
-    function difWeather(){
-      $('#difAPI').append(' aqi: ' + airquality);
-      $('#difNO2').append(' nitrogen dioxide: ' + nitrodio);
-      $('#difPM10').append(' pm10: ' + pm10);
-      }
+    //function difWeather(){
+    //  $('#difAPI').append(' aqi: ' + airquality);
+    //  $('#difNO2').append(' nitrogen dioxide: ' + nitrodio);
+    ////  $('#difPM10').append(' pm10: ' + pm10);
+  //}
 //Highest So2 [La Mantanza, Acumar, Argentina]
 $.ajax({
     url: "https://api.waqi.info/feed/@10109/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8",
@@ -57,6 +71,7 @@ $.ajax({
       pm10 = results.data.iaqi.pm10.v;
       pm25 = results.data.iaqi.pm25.v;
       so2 = results.data.iaqi.so2.v;
+      console.log(carbon, nitrodio, ozone, pm10, pm25, so2)
         lmWeather();
       }
     });
@@ -106,11 +121,45 @@ function queensWeather(){
   $('#qnyO3').append(' ozone: ' + ozone);
   $('#qnyPM25').append(' pm25: ' + pm25);
 }
-var dots = getElementsByClassName('dot')
-let start = Date.now();
-let timer = setInterval (function(){
-  let timePassed = Date.now() - start;
-  dots.style.transform = 'translateY(airquality + %)'
-})
 //hightest pm10[https://api.waqi.info/feed/@7243/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8]
 })
+
+var skills = [{"header" : "","captions" : [
+      "CO",
+      "NO2",
+      "O3",
+      "PM10",
+      "PM25",
+      "SO2"
+    ],
+    "values" : [
+      0.70,
+      0.90,
+      0.70,
+      0.80,
+      0.80,
+      0.70
+    ]
+  }
+];
+
+var hexagonIndex = 0;
+var valueIndex = 0;
+var width = 0;
+var height = 0;
+var radOffset = Math.PI/2
+var sides = 6; // Number of sides in the polygon
+var theta = 2 * Math.PI/sides; // radians per section
+
+function getXY(i, radius) {
+  return {"x": Math.cos(radOffset +theta * i) * radius*width + width/2,
+    "y": Math.sin(radOffset +theta * i) * radius*height + height/2};
+}
+
+var hue = [];
+var hueOffset = 10;
+
+for (var s in skills) {
+  $(".content").append('<div class="hexagon" id="interests"><canvas class="pentCanvas"/></div>');
+  hue[s] = (hueOffset + s * 255/skills.length) % 255;
+}

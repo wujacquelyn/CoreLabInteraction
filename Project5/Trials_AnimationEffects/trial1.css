@@ -35,12 +35,12 @@ body{
   background: #000;
 }
 .wave:before{
-  border-radius: 45%;
+  border-radius: 35%;
   background: rgba(255,255,255,1);
   animation: animate 5s linear infinite;
 }
 .wave:after{
-  border-radius: 40%;
+  border-radius: 30%;
   background: rgba(255,255,255,.5);
   animation: animate 10s linear infinite;
 }
