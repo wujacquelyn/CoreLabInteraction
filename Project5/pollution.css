@@ -1,37 +1,42 @@
 html, body{
+  background-color: #DEE0EA;
+}
+.cityName{
+  top:100vh;
+}
+button{
+  position:absolute;
+  height: 10vw;
+  width: 10vw;
+  border-radius : 50%;
+  background-color: #5B4E77;
 }
 #delhiAPI{
+  left:10vw;
+  opacity: 0.5;
 }
-#delhiCO{
-
+#cedAPI{
+  left:25vw;
+  opacity: 0.6;
 }
-#delhiNO2{
+#jabAPI{
+  left:40vw;
+  opacity: 0.7;
 }
-#delhiO3{
-
-  }
-#delhiPM10{
-
-  }
-#delhiPM25{
-
+#jiyAPI{
+  left:55vw;
+  opacity: 0.8;
 }
-#delhiSO2{
-  }
-
-  .content {
-  margin: auto;
-  text-align: center;
-  }
-
-  #c {
-  margin: auto;
-  }
-
-  .hexagon {
-  width: 70vw;
-  height: 70vw;
-  margin: auto;
-  padding: 0;
-  display:inline-block;
-  }
+#qnyAPI{
+  left:70vw;
+  opacity: 0.9;
+}
+#osmAPI{
+  left:85vw;
+  opacity: 1;
+}
+a{
+  position: absolute;
+  top: 90vh;
+  left: 50vw;
+}

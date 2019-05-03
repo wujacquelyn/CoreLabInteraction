@@ -1,165 +1,174 @@
-var airquality //real-time airquality info
-var carbon //
-var ozone//
-var nitrodio
-var pm10 //particle matter VALUES
-var pm25 //particle matter values
-var so2
+
 $(document).ready(function(){
-//hightest CO, INDIA
+//Delhi ---- INDIA
+var airquality //real-time airquality info
     $.ajax({
         url: "https://api.waqi.info/feed/@10707/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8",
         dataType: 'jsonp',
         success: function(results){
             airquality = results.data.aqi;
-            carbon = results.data.iaqi.co.v;
-            nitrodio = results.data.iaqi.no2.v;
-            ozone = results.data.iaqi.o3.v;
-            pm10 = results.data.iaqi.pm10.v;
-            pm25 = results.data.iaqi.pm25.v;
-            so2 = results.data.iaqi.so2.v;
+            delhiWeather();
+            delhiAnimate();
         }
     });
-    //*function delhiWeather(){
-        //$('#delhiAPI').append(' aqi: ' + airquality);
-        //$('#delhiCO').append(' carbon: ' + carbon);
-        //$('#delhiNO2').append(' nitrogen dioxide: ' + nitrodio);
-        //$('#delhiO3').append(' ozone: ' + ozone);
-        //$('#delhiPM10').append(' pm10: ' + pm10);
-        //$('#delhiPM25').append(' pm25: ' + pm25);
-        //$('#delhiSO2').append(' so2: ' + so2);}
-    //Animation
-    //let xs = []
-    //for (var i = 0; i <=1500; i++){
-      //xs.push(i)}
-    //let t = 0
-    //function animate(){
-      //let points = xs.map(x => {
-        //let y =  500 + airquality1 * Math.sin((x + t) / 50)
-        //return[x, y]
-      //})
-      //turn points into linec//
-      //let path = "M" + points.map(p =>{
-        //return p[0] + "," + p[1]
-      //}).join(" L")
-      //document.querySelector("path").setAttribute("d", path)
-      //requestAnimationFrame(animate)
-      //t += 1
-    //}
-    //animate()
-//highest no2[DIF, San Luis Potosí, Mexico]
+    function delhiWeather(){
+        $('#delhiAPI').append(' aqi: ' + airquality);
+      }
+
+    function delhiAnimate(){
+      var dot1 = document.querySelector('#delhiAPI')
+      dot1.animate([
+        {transform: 'translateY('+airquality/10+'vw)'},
+        {transform: 'translateY(0vw)'},
+        {transform: 'translateY('+airquality/10+'vw)'}
+      ],{
+        duration:5000,
+        easing: 'ease-in-out',
+        delay: 400,
+        iterations: Infinity,
+        direction: 'normal'
+      })
+    }
+
+//Cedart, Mexico]---South America
+var airquality2 //real-time airquality info
   $.ajax({
-      url: "https://api.waqi.info/feed/@10159/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8",
+      url: "https://api.waqi.info/feed/@10162/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8",
       dataType: 'jsonp',
       success: function(results){
           airquality2 = results.data.aqi;
-          //nitrodio = results.data.iaqi.no2.v;
-          //pm10 = results.data.iaqi.pm10.v;
+          cedWeather();
+          cedAnimate();
         }
       });
-    //function difWeather(){
-    //  $('#difAPI').append(' aqi: ' + airquality);
-    //  $('#difNO2').append(' nitrogen dioxide: ' + nitrodio);
-    ////  $('#difPM10').append(' pm10: ' + pm10);
-  //}
-//Highest So2 [La Mantanza, Acumar, Argentina]
+    function cedWeather(){
+     $('#cedAPI').append(' aqi: ' + airquality2);
+  }
+      function cedAnimate(){
+        var dot2 = document.querySelector('#cedAPI')
+        dot2.animate([
+          {transform: 'translateY('+airquality2/10+'vw)'},
+          {transform: 'translateY(0vw)'},
+          {transform: 'translateY('+airquality2/10+'vw)'}
+        ],{
+          duration:5000,
+          easing: 'ease-in-out',
+          delay: 400,
+          iterations: Infinity,
+          direction: 'normal'
+        })
+      }
+//Jabavu, Johannesburg Metro, -----South Africa
+var airquality3 //real-time airquality info
 $.ajax({
-    url: "https://api.waqi.info/feed/@10109/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8",
+    url: "https://api.waqi.info/feed/@10784/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8",
     success: function(results){
-      airquality = results.data.aqi;
-      carbon = results.data.iaqi.co.v;
-      pm10 = results.data.iaqi.pm10.v;
-      pm25 = results.data.iaqi.pm25.v;
-      so2 = results.data.iaqi.so2.v;
-      console.log(carbon, nitrodio, ozone, pm10, pm25, so2)
-        lmWeather();
+      airquality3 = results.data.aqi;
+      jabWeather();
+      jabAnimate();
       }
     });
-function lmWeather(){
-  $('#lmAPI').append(' aqi: ' + airquality);
-  $('#lmCO2').append(' carbon: ' + carbon);
-  $('#lmPM10').append(' pm10: ' + pm10);
-  $('#lmPM25').append(' pm25: ' + pm25);
-  $('#lmSO2').append(' so2: ' + so2);
-  }
-//highest o3[Secretaría de Medio Ambiente, Aguascalientes, Mexico]
-  $.ajax({
-    url: "https://api.waqi.info/feed/@9171/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8",
-    dataType: 'jsonp',
-    success: function(results){
-      airquality = results.data.aqi;
-      ozone = results.data.iaqi.o3.v;
-      pm10 = results.data.iaqi.pm10.v;
-      pm25 = results.data.iaqi.pm25.v;
-        aguaWeather();
-    }
-  })
-  function aguaWeather(){
-    $('#aguaAPI').append(' aqi: ' + airquality);
-    $('#aguaO3').append(' ozone: ' + ozone);
-    $('#aguaPM10').append(' pm10: ' + pm10);
-    $('#aguaPM25').append(' pm25: ' + pm25);
+function jabWeather(){
+  $('#jabAPI').append(' aqi: ' + airquality3);
   }
 
-//highest pm25 [Queens College NYC]
+function jabAnimate(){
+    var dot3 = document.querySelector('#jabAPI')
+    dot3.animate([
+      {transform: 'translateY('+airquality3/10+'vw)'},
+      {transform: 'translateY(0vw)'},
+      {transform: 'translateY('+airquality3/10+'vw)'}
+    ],{
+      duration:5000,
+      easing: 'ease-in-out',
+      delay: 400,
+      iterations: Infinity,
+      direction: 'normal'
+    })
+  }
+//Jiyuan,China----Asia
+var airquality4 //real-time airquality info
+  $.ajax({
+    url: "https://api.waqi.info/feed/@5824/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8",
+    dataType: 'jsonp',
+    success: function(results){
+      airquality4 = results.data.aqi;
+        jiyWeather();
+        jiyAnimate();
+    }
+  })
+  function jiyWeather(){
+    $('#jiyAPI').append(' aqi: ' + airquality4);
+  }
+
+  function jiyAnimate(){
+    var dot4 = document.querySelector('#jiyAPI')
+    dot4.animate([
+      {transform: 'translateY('+airquality4/10+'vw)'},
+      {transform: 'translateY(0vw)'},
+      {transform: 'translateY('+airquality4/10+'vw)'}
+    ],{
+      duration:5000,
+      easing: 'ease-in-out',
+      delay: 400,
+      iterations: Infinity,
+      direction: 'normal'
+    })
+  }
+//highest pm25 [Queens College NYC]----North America
+var airquality5 //real-time airquality info
 $.ajax({
   url: "https://api.waqi.info/feed/@6905/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8",
   dataType: 'jsonp',
   success: function(results){
-    airquality = results.data.aqi;
-    carbon = results.data.iaqi.co.v;
-    nitrodio = results.data.iaqi.no2.v;
-    ozone = results.data.iaqi.o3.v;
-    pm25 = results.data.iaqi.pm25.v;
+    airquality5 = results.data.aqi;
       queensWeather();
+      queensAnimate();
   }
 })
 function queensWeather(){
-  $('#qnyAPI').append(' aqi: ' + airquality);
-  $('#qnyCO').append(' aqi: ' + carbon);
-  $('#qnyNO2').append(' nitrogen dioxide: ' + nitrodio);
-  $('#qnyO3').append(' ozone: ' + ozone);
-  $('#qnyPM25').append(' pm25: ' + pm25);
+  $('#qnyAPI').append(' aqi: ' + airquality5);
 }
-//hightest pm10[https://api.waqi.info/feed/@7243/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8]
-})
-
-var skills = [{"header" : "","captions" : [
-      "CO",
-      "NO2",
-      "O3",
-      "PM10",
-      "PM25",
-      "SO2"
-    ],
-    "values" : [
-      0.70,
-      0.90,
-      0.70,
-      0.80,
-      0.80,
-      0.70
-    ]
+function queensAnimate(){
+  var dot5 = document.querySelector('#qnyAPI')
+  dot5.animate([
+    {transform: 'translateY('+airquality5/10+'vw)'},
+    {transform: 'translateY(0vw)'},
+    {transform: 'translateY('+airquality5/10+'vw)'}
+  ],{
+    duration:5000,
+    easing: 'ease-in-out',
+    delay: 400,
+    iterations: Infinity,
+    direction: 'normal'
+  })
+}
+//Osmaniye, Turkey]
+var airquality6 //real-time airquality info
+$.ajax({
+  url: "https://api.waqi.info/feed/@4053/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8",
+  dataType: 'jsonp',
+  success: function(results){
+    airquality6= results.data.aqi;
+      osmWeather();
+      osmAnimate();
   }
-];
-
-var hexagonIndex = 0;
-var valueIndex = 0;
-var width = 0;
-var height = 0;
-var radOffset = Math.PI/2
-var sides = 6; // Number of sides in the polygon
-var theta = 2 * Math.PI/sides; // radians per section
-
-function getXY(i, radius) {
-  return {"x": Math.cos(radOffset +theta * i) * radius*width + width/2,
-    "y": Math.sin(radOffset +theta * i) * radius*height + height/2};
+})
+function osmWeather(){
+  $('#osmAPI').append(' aqi: ' + airquality6);
 }
-
-var hue = [];
-var hueOffset = 10;
-
-for (var s in skills) {
-  $(".content").append('<div class="hexagon" id="interests"><canvas class="pentCanvas"/></div>');
-  hue[s] = (hueOffset + s * 255/skills.length) % 255;
+function osmAnimate(){
+  var dot6 = document.querySelector('#osmAPI')
+  dot6.animate([
+    {transform: 'translateY('+airquality6/10+'vw)'},
+    {transform: 'translateY(0vw)'},
+    {transform: 'translateY('+airquality6/10+'vw)'}
+  ],{
+    duration:5000,
+    easing: 'ease-in-out',
+    delay: 400,
+    iterations: Infinity,
+    direction: 'normal'
+  })
 }
+})

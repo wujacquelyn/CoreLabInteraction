@@ -1,0 +1,66 @@
+<!doctype.html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--<link href="trial2.css" rel="stylesheet" type="text/css">-->
+  <style>
+    #wave-container{
+    position:relative;
+    margin: 0;
+    height: 36%;
+     width: 132%;
+  }
+  .dot {
+    position: absolute;
+    transform-origin: 50% 50%;
+    height: 10vw;
+    width: 10vw;
+    border-radius : 50%;
+    background-color: #C0392B;
+    /*-webkit-animation:vertical-movement 2.5s infinite ease-in-out;
+    -moz-animation:vertical-movement 2.5s infinite ease-in-out;
+    -ms-animation:vertical-movement 2.5s infinite ease-in-out;
+    -o-animation:vertical-movement 2.5s infinite ease-in-out;
+  animation:vertical-movement 2.5s infinite ease-in-out; */
+}
+    #d1 {
+      left:10%;
+      opacity: 0.1
+    }
+    #d2 {
+      left:20%;
+      opacity: 0.2
+      }
+    #d3 {
+      left:30%;
+      opacity: 0.3
+         }
+      #d4 {
+      left:40%;
+      opacity: 0.4
+      }
+      #d5 {
+      left:50%;
+      opacity: 0.5
+      }
+      #d6 {
+      left:60%;
+      opacity: 0.6
+      }
+
+</style>
+</head>
+<body>
+<div id="delhiAPI"></div>
+<div id="wave-container">
+  <div class="dot" id="d1"></div>
+  <div class="dot" id="d2"></div>
+  <div class="dot" id="d3"></div>
+  <div class="dot" id="d4"></div>
+  <div class="dot" id="d5"></div>
+  <div class="dot" id="d6"></div>
+</div>
+<script src="dots.js"></script>
+</script>
+</body>
+</html>

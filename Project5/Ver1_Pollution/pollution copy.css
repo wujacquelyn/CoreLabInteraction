@@ -1,62 +1,21 @@
-body{
-font-family: "Helvetica", sans-serif;
+html, body{
 }
-a{
-  position: absolute;
-  top: 60vh;
-  left: 25vw;
-  font-size: 2em;
+#delhiAPI{
 }
-h2{
-  position: absolute;
-  top: 50vh;
-  left: 25vw;
+#delhiCO{{}
+#delhiNO2{
 }
-.cityName{
-  position: absolute;
-  font-size: 1.3em;
-  font-weight: bold;
-}
-.pollutant{
-  position: absolute;
-  top:10vh;
-  margin-top: 2em;
-  font-size: 1em;
-  line-height: 1.5em;
-}
-.pollutant#SAM{
-  left:0vw;
-}
-.pollutant#DIF{
-  left: 20vw;
-}
-.pollutant#LMA{
-  left: 40vw;
-}
-.pollutant#SDMA{
-  left: 60vw;
-}
-.pollutant#QC{
-  left: 82vw;
-}
+#delhiO3{
 
-#Delhi{
-  top:0;
-  left:0;
+
+  }
+#delhiPM10{
+
+  }
+#delhiPM25{
+
+
 }
-#Mexico{
-  left: 20vw;
-  top: 0;
-}
-#LaMan{
-  top:0;
-  left: 40vw;
-}
-#Aguascalientes{
-  top: 0;
-  left:60vw;
-}
-#QueensCollege{
-  top: 0;
-  left:82vw;
-}
+#delhiSO2{
+
+  }
