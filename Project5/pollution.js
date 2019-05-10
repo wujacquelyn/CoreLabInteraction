@@ -17,9 +17,9 @@ var airquality //real-time airquality info
     function delhiAnimate(){
       var dot1 = document.querySelector('#delhiAPI')
       dot1.animate([
-        {transform: 'translateY('+airquality/20+'vw)'},
+        {transform: 'translateY('+airquality/10+'vw)'},
         {transform: 'translateY(0vw)'},
-        {transform: 'translateY('+airquality/20+'vw)'}
+        {transform: 'translateY('+airquality/10+'vw)'}
       ],{
         duration:6000,
         easing: 'ease-in-out',
