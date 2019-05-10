@@ -42,8 +42,8 @@ $(document).ready(function() {
         carbon/100,
         ozone/100,
         nitrodio/100,
-        pm10/100,//max value for "values is slightly <=1, pm10&pm25 are measured by the 100s
-        pm25/100,
+        pm10/500,//max value for "values is slightly <=1, pm10&pm25 are measured by the 100s
+        pm25/200,
         so2/100
       ]
     }
