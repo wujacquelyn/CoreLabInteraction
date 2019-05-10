@@ -76,7 +76,7 @@ $(document).ready(function() {
     // LABEL
     color = "#4295C9";
     ctx.fillStyle = color;
-    ctx.font="1.5em Avenir";
+    ctx.font="1em Avenir";
     ctx.font.weight="bold"
 
     /// PENTAGON BACKGROUND
