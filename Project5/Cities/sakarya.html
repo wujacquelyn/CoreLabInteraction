@@ -1,0 +1,135 @@
+<!doctype.html>
+<html>
+<head>
+  <style>
+body {
+font-family: forma-djr-display, sans-serif;
+background-color: black;
+width: 100vw;
+height: 100vh;
+}
+a{
+  position: absolute;
+  color: #6B98E0;
+  top: 12vh;
+  left: 5vw;
+  font-size: 1em;
+}
+.cityName{
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  color: #5D79DD;
+  text-shadow: 0 0 50px #C300FF;
+  font-size: 1.5em;
+  text-align: center;
+}
+.content {
+margin: auto;
+text-align: center;
+}
+
+#c {
+margin: auto;
+}
+.pollutant{
+  color:white;
+  font-size: 1em;
+  display: none;
+}
+.hexagon {
+position: absolute;
+z-index: 0;
+width: 60vw;
+height: 60vw;
+display:inline-block;
+margin: 0;
+cursor: pointer;
+padding: 0;
+top: 60vh;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+}
+/*cities*/
+#sakCO{
+position: absolute;
+  text-align: center;
+  top:80vh;
+  left: 50vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#sakNO2{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:50vh;
+  left: 40vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#sakO3{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:68vh;
+  left: 43.5vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#sakPM10{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:40vh;
+  left: 50vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#sakPM25{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:50vh;
+  left: 60vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#sakSO2{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:68vh;
+  left: 58vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+  </style>
+</head>
+<body>
+    <div class="content"></div>
+    <div class="cityName">SAKARYA HENDEK OSB, TURKEY</div>
+      <a href="../pollution.html">< b a c k</a>
+    <div class="pollutant">
+      <div id="sakCO"></div>
+      <div id="sakNO2"></div>
+      <div id="sakO3"></div>
+      <div id="sakPM10"></div>
+      <div id="sakPM25"></div>
+      <div id="sakSO2"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="sakarya.js" type="text/javascript"></script>
+</body>
+</html>

@@ -2,12 +2,28 @@
 <html>
 <head>
   <style>
-body {
-background-color: #ffffff;
+body{
+font-family: forma-djr-display, sans-serif;
+background-color: black;
 width: 100vw;
 height: 100vh;
 }
-
+a{
+  position: absolute;
+  color: #6B98E0;
+  top: 12vh;
+  left: 5vw;
+  font-size: 1.5em;
+}
+.cityName{
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  color: #5D79DD;
+  text-shadow: 0 0 50px #C300FF;
+  font-size: 2.5em;
+  text-align: center;
+}
 .content {
 margin: auto;
 text-align: center;
@@ -16,22 +32,97 @@ text-align: center;
 #c {
 margin: auto;
 }
-
+.pollutant{
+  color:white;
+  font-size: 1.5em;
+  display: none;
+}
 .hexagon {
-width: 70vw;
-height: 70vw;
-margin: auto;
-padding: 0;
+position: absolute;
+z-index: 0;
+width: 60vw;
+height: 60vw;
 display:inline-block;
+margin: 0;
+cursor: pointer;
+padding: 0;
+top: 60vh;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+}
+/*cities*/
+#delhiCO{
+position: absolute;
+  text-align: center;
+  top:80vh;
+  left: 50vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#delhiNO2{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:50vh;
+  left: 40vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#delhiO3{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:68vh;
+  left: 43.5vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#delhiPM10{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:40vh;
+  left: 50vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#delhiPM25{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:50vh;
+  left: 60vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#delhiSO2{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:68vh;
+  left: 58vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
   </style>
 </head>
 <body>
     <div class="content"></div>
-    <div class="cityName" id= "Delhi">Sri Auribindo Marg,<br>Delhi, India</div>
-    <div class="pollutant" id=SAM>
-      <div id="delhiAPI"></div>
+    <div class="cityName">SRI AURIBINDO MARG, DELHI, INDIA</div>
+     <a href="../pollution.html">< b a c k</a>
+    <div class="pollutant">
       <div id="delhiCO"></div>
       <div id="delhiNO2"></div>
       <div id="delhiO3"></div>

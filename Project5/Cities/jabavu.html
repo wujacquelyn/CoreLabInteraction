@@ -3,36 +3,106 @@
 <head>
   <style>
 body {
-background-color: #ffffff;
+font-family: forma-djr-display, sans-serif;
+background-color: black;
 width: 100vw;
 height: 100vh;
 }
-
+a{
+  position: absolute;
+  color: #6B98E0;
+  top: 12vh;
+  left: 5vw;
+  font-size: 1em;
+}
+.cityName{
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  color: #5D79DD;
+  text-shadow: 0 0 50px #C300FF;
+  font-size: 1.5em;
+  text-align: center;
+}
 .content {
 margin: auto;
 text-align: center;
 }
-
 #c {
 margin: auto;
 }
-
+.pollutant{
+  color:white;
+  font-size: 1em;
+  display: none;
+}
 .hexagon {
-width: 70vw;
-height: 70vw;
+position: absolute;
+z-index: 0;
+width: 60vw;
+height: 60vw;
 margin: auto;
 padding: 0;
 display:inline-block;
+margin: 0;
+cursor: pointer;
+padding: 0;
+top: 60vh;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+}
+#jabO3{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:75vh;
+  left: 50vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#jabPM10{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:60vh;
+  left: 40vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#jabPM25{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:45vh;
+  left: 50vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#jabSO2{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:60vh;
+  left: 60vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
   </style>
 </head>
 <body>
     <div class="content"></div>
-    <div class="cityName" id= "jabavu">Jabavu, Johannesburg Metro, South America</div>
+    <div class="cityName" id= "jabavu">JABAVU, JOHANNESBURG METRO, SOUTH AFRICA</div>
+     <a href="../pollution.html">< b a c k</a>
     <div class="pollutant" id=THA>
-      <div id="jabCO"></div>
-      <div id="jabO2"></div>
       <div id="jabO3"></div>
       <div id="jabPM10"></div>
       <div id="jabPM25"></div>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#938AC2;}
+	.st2{fill:#8274B6;}
+	.st3{fill:#6B58A6;}
+	.st4{fill:#382F8A;}
+	.st5{fill:#2D2B74;}
+	.st6{fill:#24205B;}
+	.st7{fill:none;}
+	.st8{fill:#411775;}
+	.st9{font-family:'FormaDJRDisplay-Bold';}
+	.st10{font-size:30px;}
+	.st11{letter-spacing:3;}
+	.st12{font-family:'FormaDJRDisplay-Medium';}
+	.st13{font-size:36px;}
+	.st14{letter-spacing:1;}
+	.st15{font-size:25px;}
+	.st16{font-family:'AdobeSongStd-Light-GBpc-EUC-H';}
+</style>
+<g id="Layer_1">
+</g>
+<g id="Layer_2">
+	<rect class="st0" width="1920" height="96"/>
+	<rect y="96" class="st1" width="1920" height="125"/>
+	<rect x="1" y="216" class="st2" width="1920" height="143"/>
+	<rect y="359" class="st3" width="1920" height="186"/>
+	<rect y="540" class="st4" width="1921" height="181"/>
+	<rect x="1" y="721" class="st5" width="1920" height="183"/>
+	<rect x="1" y="901" class="st6" width="1920" height="182"/>
+</g>
+<g id="Layer_3">
+	<rect x="1" y="40.51" class="st7" width="287" height="31.49"/>
+	<text transform="matrix(1 0 0 1 119.6304 61.5146)" class="st8 st9 st10 st11">API</text>
+	<rect x="288" y="40.51" class="st7" width="512" height="31.49"/>
+	<text transform="matrix(1 0 0 1 372.8379 61.5146)" class="st8 st9 st10 st11">AIR POLLUTION LEVEL</text>
+	<rect x="800" y="39" class="st7" width="560" height="33"/>
+	<text transform="matrix(1 0 0 1 899.2231 60)" class="st8 st9 st10 st11">HEALTH IMPLICATIONS</text>
+	<rect x="1360" y="37" class="st7" width="560" height="33"/>
+	<text transform="matrix(1 0 0 1 1376.6484 58)" class="st8 st9 st10 st11">CAUTIONARY STATEMENT(PM2.5)</text>
+	<rect x="1" y="140.51" class="st7" width="287" height="31.49"/>
+	<text transform="matrix(1 0 0 1 106.9346 165.7144)" class="st0 st12 st13 st14">0-50</text>
+	<rect x="288" y="140.51" class="st7" width="513" height="31.49"/>
+	<text transform="matrix(1 0 0 1 500.5264 165.7144)" class="st0 st12 st13 st14">Good</text>
+	<rect x="288" y="272.51" class="st7" width="513" height="31.49"/>
+	<text transform="matrix(1 0 0 1 463.501 297.7144)" class="st0 st12 st13 st14">Moderate</text>
+	<rect x="287" y="407.51" class="st7" width="513" height="85.49"/>
+	<text transform="matrix(1 0 0 1 431.7583 432.7144)"><tspan x="0" y="0" class="st0 st12 st13 st14">Unhealthy for </tspan><tspan x="-35.1" y="38" class="st0 st12 st13 st14"> Sensitive Groups</tspan></text>
+	<rect x="287" y="976.51" class="st7" width="513" height="31.49"/>
+	<text transform="matrix(1 0 0 1 453.2852 1001.7144)" class="st0 st12 st13 st14">Hazardous</text>
+	<rect x="289" y="806.51" class="st7" width="513" height="31.49"/>
+	<text transform="matrix(1 0 0 1 419.3945 831.7144)" class="st0 st12 st13 st14">Very Unhealthy</text>
+	<rect x="286" y="614.51" class="st7" width="513" height="31.49"/>
+	<text transform="matrix(1 0 0 1 459.8638 639.7144)" class="st0 st12 st13 st14">Unhealthy</text>
+	<rect x="1" y="272.51" class="st7" width="287" height="31.49"/>
+	<text transform="matrix(1 0 0 1 93.1831 297.7144)" class="st0 st12 st13 st14">51-100</text>
+	<rect y="435.51" class="st7" width="287" height="31.49"/>
+	<text transform="matrix(1 0 0 1 85.3071 460.7144)" class="st0 st12 st13 st14">101-150</text>
+	<rect x="1" y="616.51" class="st7" width="287" height="31.49"/>
+	<text transform="matrix(1 0 0 1 83.1572 641.7144)" class="st0 st12 st13 st14">151-200</text>
+	<rect y="806.51" class="st7" width="287" height="31.49"/>
+	<text transform="matrix(1 0 0 1 78.0532 831.7144)" class="st0 st12 st13 st14">201-300</text>
+	<rect y="978.51" class="st7" width="287" height="31.49"/>
+	<text transform="matrix(1 0 0 1 101.4526 1003.7144)" class="st0 st12 st13 st14">300+</text>
+	<rect x="781" y="125.31" class="st7" width="560" height="63.69"/>
+	<text transform="matrix(1 0 0 1 816.6284 142.8081)"><tspan x="0" y="0" class="st0 st12 st15">Air quality is considered satisfactory, and air </tspan><tspan x="76.86" y="28" class="st0 st12 st15"> pollution poses little or no risk.</tspan></text>
+	<rect x="1360" y="141.31" class="st7" width="560" height="30.69"/>
+	<text transform="matrix(1 0 0 1 1611.2002 158.8081)" class="st0 st12 st15">None</text>
+	<rect x="782" y="234" class="st7" width="560" height="120"/>
+	<text transform="matrix(1 0 0 1 823.1411 251.5)"><tspan x="0" y="0" class="st0 st12 st15">Air quality is acceptable; however, for some </tspan><tspan x="3.06" y="28" class="st0 st12 st15"> pollutants there may be a moderate health </tspan><tspan x="-20.84" y="56" class="st0 st12 st15"> concern for a very small number of people who </tspan><tspan x="30.81" y="84" class="st0 st12 st15">are unusually sensitive to air pollution.</tspan></text>
+	<rect x="780" y="410.51" class="st7" width="560" height="81.49"/>
+	<text transform="matrix(1 0 0 1 809.0039 428.0088)"><tspan x="0" y="0" class="st0 st12 st15">Members of sensitive groups may experience </tspan><tspan x="-24.5" y="28" class="st0 st12 st15">health effects. The general public is not likely to be </tspan><tspan x="200.83" y="56" class="st0 st12 st15">affected.</tspan></text>
+	<rect x="781" y="585.08" class="st7" width="560" height="89.92"/>
+	<text transform="matrix(1 0 0 1 789.3047 602.582)"><tspan x="0" y="0" class="st0 st12 st15">Everyone may begin to experience health effects; </tspan><tspan x="85.16" y="28" class="st0 st12 st15">members of sensitive groups may </tspan><tspan x="52.36" y="56" class="st0 st12 st15">experience more serious health effects.</tspan></text>
+	<rect x="780" y="777" class="st7" width="559" height="91.02"/>
+	<text transform="matrix(1 0 0 1 805.7671 794.5)"><tspan x="0" y="0" class="st0 st12 st15">Health warnings of emergency conditions. The </tspan><tspan x="73.72" y="28" class="st0 st12 st15">entire population is more likely to </tspan><tspan x="184.48" y="56" class="st0 st12 st15"> be affected.</tspan></text>
+	<rect x="780" y="955.65" class="st7" width="563.24" height="58.35"/>
+	<text transform="matrix(1 0 0 1 818.126 973.1514)"><tspan x="0" y="0" class="st0 st12 st15">Health alert: everyone may experience more  </tspan><tspan x="122.57" y="28" class="st0 st12 st15">serious health effects</tspan></text>
+	<rect x="1361" y="245.69" class="st7" width="560" height="84.31"/>
+	<text transform="matrix(1 0 0 1 1407.8418 263.187)"><tspan x="0" y="0" class="st0 st12 st15">Active children and adults, and people with  </tspan><tspan x="-33.54" y="28" class="st0 st12 st15">respiratory disease, such as asthma, should limit </tspan><tspan x="80.01" y="56" class="st0 st12 st15">prolonged outdoor exertion.</tspan></text>
+	<rect x="1359" y="405.61" class="st7" width="561" height="81.39"/>
+	<text transform="matrix(1 0 0 1 1406.3418 423.1094)"><tspan x="0" y="0" class="st0 st12 st15">Active children and adults, and people with </tspan><tspan x="-36.1" y="28" class="st0 st12 st15"> respiratory disease, such as asthma, should limit </tspan><tspan x="80.01" y="56" class="st0 st12 st15">prolonged outdoor exertion.</tspan></text>
+	<rect x="1361" y="563" class="st7" width="561" height="134"/>
+	<text transform="matrix(1 0 0 1 1408.3418 580.5)"><tspan x="0" y="0" class="st0 st12 st15">Active children and adults, and people with  </tspan><tspan x="-41.2" y="28" class="st0 st12 st15">respiratory disease, such as asthma, should avoid </tspan><tspan x="-2.76" y="56" class="st0 st12 st15">prolonged outdoor exertion; everyone else,  </tspan><tspan x="6.25" y="84" class="st0 st12 st15">especially children, should limit prolonged  </tspan><tspan x="137.83" y="112" class="st0 st12 st15">outdoor exertion</tspan><tspan x="322.53" y="112" class="st0 st16 st15">.</tspan></text>
+	<rect x="1358" y="968" class="st7" width="561" height="48"/>
+	<text transform="matrix(1 0 0 1 1405.2041 985.5)" class="st0 st12 st15">Everyone should avoid all outdoor exertion</text>
+	<rect x="1359" y="750.55" class="st7" width="562" height="121.45"/>
+	<text transform="matrix(1 0 0 1 1406.8418 768.0527)"><tspan x="0" y="0" class="st0 st12 st15">Active children and adults, and people with  </tspan><tspan x="-41.2" y="28" class="st0 st12 st15">respiratory disease, such as asthma, should avoid </tspan><tspan x="-16.65" y="56" class="st0 st12 st15">all outdoor exertion; everyone else, especially </tspan><tspan x="22.96" y="84" class="st0 st12 st15"> children, should limit outdoor exertion.</tspan></text>
+</g>
+</svg>

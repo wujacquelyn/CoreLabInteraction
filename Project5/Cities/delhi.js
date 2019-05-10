@@ -1,4 +1,3 @@
-var airquality //real-time airquality info
 var carbon //
 var ozone//
 var nitrodio
@@ -22,13 +21,12 @@ $(document).ready(function() {
   }
   });
   function delhiWeather(){
-  $('#delhiAPI').append(' aqi: ' + airquality);
-  $('#delhiCO').append(' carbon: ' + carbon);
-  $('#delhiNO2').append(' nitrogen dioxide: ' + nitrodio);
-  $('#delhiO3').append(' ozone: ' + ozone);
-  $('#delhiPM10').append(' pm10: ' + pm10);
-  $('#delhiPM25').append(' pm25: ' + pm25);
-  $('#delhiSO2').append(' so2: ' + so2);
+  $('#delhiCO').append(carbon);
+  $('#delhiNO2').append(nitrodio);
+  $('#delhiO3').append(ozone);
+  $('#delhiPM10').append(pm10);
+  $('#delhiPM25').append(pm25);
+  $('#delhiSO2').append(so2);
   }
 
   function makeMap() {
@@ -80,10 +78,11 @@ $(document).ready(function() {
     ctx.textAlign="center";
 
     // LABEL
-    color = "#4295C9";
+
+    color = "#553494";
     ctx.fillStyle = color;
-    ctx.font="1em Avenir";
-    ctx.font.weight="bold"
+    ctx.font="2em Avenir";
+    ctx.font.weight="bold";
 
     /// PENTAGON BACKGROUND
     for (var i = 0; i < sides; i++) {
@@ -91,9 +90,14 @@ $(document).ready(function() {
       ctx.beginPath();
       xy = getXY(i, 0.3);
       colorJitter = 220 + theta*i*2;
-      color = "#644D7C";
-      ctx.fillStyle = color;
-      ctx.strokeStyle = color;
+      var gradient = ctx.createLinearGradient(0, 0, 0, 950);
+      gradient.addColorStop(0, "#4F1B8E");//purple
+      //gradient.addColorStop(0.5, "#E600EA");//pink
+      gradient.addColorStop(1, "#5D79DD");//blue
+      ctx.shadowColor = "#14938F";
+      ctx.shadowBlur = 60;
+      ctx.fillStyle = gradient;
+      ctx.strokeStyle = gradient;
       ctx.moveTo(0.5*width, 0.5*height); //center
       ctx.lineTo(xy.x, xy.y);
       xy = getXY(i+1, 0.3);
@@ -106,11 +110,22 @@ $(document).ready(function() {
       ctx.fill();
       ctx.stroke();
     }
-
+    /*ON CLICK*/
+    var hex = document.querySelector(".hexagon")
+    var text = document.querySelector(".pollutant")
+    hex.addEventListener("mouseout", hide)
+    function hide(){
+    text.style.display="none";
+    }
+    hex.addEventListener("mouseover", show)
+    function show(){
+    text.style.display="block";
+    }
+      /*** SKILL GRAPH ***/
     valueIndex = 0;
     ctx.beginPath();
-    ctx.fillStyle = "#FCAB10";
-    ctx.strokeStyle = "#FCAB10";
+    ctx.fillStyle = "#32367A";
+    ctx.strokeStyle = "#32367A";
     ctx.lineWidth = 5;
     var value = pollutants[hexagonIndex].values[valueIndex];
     xy = getXY(i, value * 0.15);

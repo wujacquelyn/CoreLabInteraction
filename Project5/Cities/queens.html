@@ -1,0 +1,111 @@
+<!doctype.html>
+<html>
+<head>
+  <style>
+body {
+font-family: forma-djr-display, sans-serif;
+background-color: black;
+width: 100vw;
+height: 100vh;
+}
+a{
+  position: absolute;
+  color: #6B98E0;
+  top: 12vh;
+  left: 5vw;
+  font-size: 1em;
+}
+.cityName{
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  color: #5D79DD;
+  text-shadow: 0 0 50px #C300FF;
+  font-size: 1.5em;
+  text-align: center;
+}
+.content {
+margin: auto;
+text-align: center;
+}
+
+#c {
+margin: auto;
+}
+.pollutant{
+  color:white;
+  font-size: 1em;
+  display: none;
+}
+.hexagon {
+  position: absolute;
+  z-index: 0;
+  width: 60vw;
+  height: 60vw;
+  display:inline-block;
+  margin: 0;
+  cursor: pointer;
+  padding: 0;
+  top: 60vh;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+/*cities*/
+#queCO{
+position: absolute;
+  text-align: center;
+  top:75vh;
+  left: 50vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#queNO2{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:45vh;
+  left: 50vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#queO3{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:60vh;
+  left: 43.5vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#quePM25{
+  margin:0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top:60vh;
+  left: 60vw;
+  font-weight: lighter;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+  </style>
+</head>
+<body>
+    <div class="content"></div>
+    <div class="cityName" id= "NYC">QUEENS COLLEGE, NEW YORK</div>
+    <a href="../pollution.html">< b a c k</a>
+    <div class="pollutant" id="QUE">
+      <div id="queCO"></div>
+      <div id="queNO2"></div>
+      <div id="queO3"></div>
+      <div id="quePM25"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="queens.js" type="text/javascript"></script>
+</body>
+</html>

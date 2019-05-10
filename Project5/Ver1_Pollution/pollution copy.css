@@ -1,4 +1,13 @@
 html, body{
+  font-family: "Avenir",sans-serif;
+}
+ul{
+  position: absolute;
+  left: 20vw;
+  font-size: 2em;
+}
+.cityName{
+  font-weight: bold;
 }
 #delhiAPI{
 }

@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 //Delhi ---- INDIA
 var airquality //real-time airquality info
@@ -22,7 +21,7 @@ var airquality //real-time airquality info
         {transform: 'translateY(0vw)'},
         {transform: 'translateY('+airquality/10+'vw)'}
       ],{
-        duration:5000,
+        duration:6000,
         easing: 'ease-in-out',
         delay: 400,
         iterations: Infinity,
@@ -51,7 +50,7 @@ var airquality2 //real-time airquality info
           {transform: 'translateY(0vw)'},
           {transform: 'translateY('+airquality2/10+'vw)'}
         ],{
-          duration:5000,
+          duration:6000,
           easing: 'ease-in-out',
           delay: 400,
           iterations: Infinity,
@@ -79,7 +78,7 @@ function jabAnimate(){
       {transform: 'translateY(0vw)'},
       {transform: 'translateY('+airquality3/10+'vw)'}
     ],{
-      duration:5000,
+      duration:6000,
       easing: 'ease-in-out',
       delay: 400,
       iterations: Infinity,
@@ -108,7 +107,7 @@ var airquality4 //real-time airquality info
       {transform: 'translateY(0vw)'},
       {transform: 'translateY('+airquality4/10+'vw)'}
     ],{
-      duration:5000,
+      duration:6000,
       easing: 'ease-in-out',
       delay: 400,
       iterations: Infinity,
@@ -136,35 +135,35 @@ function queensAnimate(){
     {transform: 'translateY(0vw)'},
     {transform: 'translateY('+airquality5/10+'vw)'}
   ],{
-    duration:5000,
+    duration:6000,
     easing: 'ease-in-out',
     delay: 400,
     iterations: Infinity,
     direction: 'normal'
   })
 }
-//Osmaniye, Turkey]
+//Sakarya Hendek OSB, Turkey]
 var airquality6 //real-time airquality info
 $.ajax({
-  url: "https://api.waqi.info/feed/@4053/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8",
+  url: "https://api.waqi.info/feed/@10675/?token=90fb658a0fa37a229e2826c2c35a20bdbdc890f8",
   dataType: 'jsonp',
   success: function(results){
     airquality6= results.data.aqi;
-      osmWeather();
-      osmAnimate();
+      sakWeather();
+      sakAnimate();
   }
 })
-function osmWeather(){
-  $('#osmAPI').append(' aqi: ' + airquality6);
+function sakWeather(){
+  $('#sakAPI').append(' aqi: ' + airquality6);
 }
-function osmAnimate(){
-  var dot6 = document.querySelector('#osmAPI')
+function sakAnimate(){
+  var dot6 = document.querySelector('#sakAPI')
   dot6.animate([
     {transform: 'translateY('+airquality6/10+'vw)'},
     {transform: 'translateY(0vw)'},
     {transform: 'translateY('+airquality6/10+'vw)'}
   ],{
-    duration:5000,
+    duration:6000,
     easing: 'ease-in-out',
     delay: 400,
     iterations: Infinity,
@@ -172,3 +171,30 @@ function osmAnimate(){
   })
 }
 })
+//Scrolling
+/*Scroll to top when arrow up clicked BEGIN*/
+$(document).ready(function() {
+    $("h1").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 1000 }, "slow");
+        return false;
+    });
+
+});
+
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#arrow').fadeIn();
+    } else {
+        $('#arrow').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#arrow").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});

@@ -3,41 +3,123 @@
 <head>
   <style>
 body {
-background-color: #ffffff;
+font-family: forma-djr-display, sans-serif;
+background-color: black;
 width: 100vw;
 height: 100vh;
 }
-
+.cityName{
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  color: #5D79DD;
+  text-shadow: 0 0 50px #C300FF;
+  font-size: 1.5em;
+  text-align: center;
+}
+a{
+  position: absolute;
+  color: #6B98E0;
+  top: 12vh;
+  left: 5vw;
+  font-size: 1em;
+}
 .content {
 margin: auto;
 text-align: center;
 }
-
+.pollutant{
+  color:white;
+  font-size: 1em;
+  display: none;
+}
 #c {
 margin: auto;
 }
 
 .hexagon {
-width: 70vw;
-height: 70vw;
-margin: auto;
-padding: 0;
-display:inline-block;
-}
+  position: absolute;
+  z-index: 0;
+  width: 60vw;
+  height: 60vw;
+  margin: 0;
+  cursor: pointer;
+  padding: 0;
+  display:inline-block;
+  top: 60vh;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  }
+  #cedCO{
+  position: absolute;
+    text-align: center;
+    top:80vh;
+    left: 50vw;
+    font-weight: lighter;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  #cedNO2{
+    margin:0;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    top:45vh;
+    left: 45vw;
+    font-weight: lighter;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  #cedO3{
+    margin:0;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    top:65vh;
+    left: 43.5vw;
+    font-weight: lighter;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  #cedPM10{
+    margin:0;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    top:45vh;
+    left: 56vw;
+    font-weight: lighter;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  #cedPM25{
+    margin:0;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    top:65vh;
+    left: 60vw;
+    font-weight: lighter;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
 
   </style>
 </head>
 <body>
-    <div class="content"></div>
-    <div class="cityName" id= "Cedart">CEDART, Oaxaca, Mexico</div>
-    <div class="pollutant" id=SAM>
-      <div id="cedCO"></div>
-      <div id="cedNO2"></div>
-      <div id="cedO3"></div>
-      <div id="cedPM10"></div>
-      <div id="cedPM25"></div>
-      <div id="cedSO2"></div>
-    </div>
+  <div class="content"></div>
+        <div class="cityName" id= "Cedart">CEDART, OAXACA, MEXICO</div>
+        <a href="../pollution.html">< b a c k</a>
+        <div class="pollutant" id=SAM>
+          <div id="cedCO"></div>
+          <div id="cedNO2"></div>
+          <div id="cedO3"></div>
+          <div id="cedPM10"></div>
+          <div id="cedPM25"></div>
+        </div>
+      </div>
+      </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="cedart.js" type="text/javascript"></script>
 </body>

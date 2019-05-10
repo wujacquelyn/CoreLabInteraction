@@ -1,42 +1,212 @@
-html, body{
-  background-color: #DEE0EA;
+html,body{
+  font-family: forma-djr-display, sans-serif;
+  display: contents;
+  overflow: none;
+  margin: 0vw;
+  padding: 0vw;
+  background-color: black;
+}
+#title{
+  margin: 1vh;
+  color: #5D79DD;
+  font-size: 2em;
+  text-align: center;
+}
+h1{
+  position: absolute;
+  top: 1vh;
+  right: 2vw;
+  color: #95C2E5;
+  text-align:right;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+h1:hover{
+  text-shadow: 0 0 10px #95C2E5;
 }
 .cityName{
-  top:100vh;
+  position: absolute;
+  top:110vh;
+  width: 90vw;
+  margin: 5vw;
+  padding: 0;
+  grid-gap: 6vw;
+  display: grid;
+  grid-template-rows: 5vw;
+  grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw;
+  font-family: forma-djr-display, sans-serif;
+  font-weight: 350;
+  font-style: normal;
+  font-size: 3.5vh;
+  justify-items: stretch;
+  letter-spacing: 0.2em;
+  line-height: 6vh;
+  white-space: nowrap;
+  color: #95C2E5;
+  text-shadow: 0 0 50px #C300FF;
 }
 button{
+  margin: 5vw;
+  z-index: 0;
   position:absolute;
   height: 10vw;
   width: 10vw;
-  border-radius : 50%;
-  background-color: #5B4E77;
+  border-color: #00D4FF;
+  background: url(color.png);
+  background-size: cover;
+  animation: animate 10s ease-in infinite;
+  font-family: forma-djr-display, sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  font-size: 1em;
+  box-shadow: 0 0 15px #95C2E5;
+  color: #95C2E5;
+  outline: none;
+}
+button:hover{
+  cursor: pointer;
+  height: 10vw;
+  width: 10vw;
+  background: url(color_hover.png);
+  background-size: cover;
+  box-shadow: 0 0 15px #c96ae4;
+}
+.pollutant{
+  position:absolute;
+  display: grid;
+  width: 90vw;
+  margin: 0vw;
+  grid-gap: 6vw;
+  grid-template-rows: 20vw;
+  grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw;
+
+}
+#Delhi{
+align-self: center;
+grid-row: 1;
+grid-column: 1 / 2;
+  transform: rotate(-90deg);
+}
+#Cedart{
+  align-self: center;
+  grid-row: 1;
+  grid-column: 2 / 3;
+  transform: rotate(-90deg);
+}
+#Jabavu{
+  align-self: center;
+  grid-row: 1;
+  grid-column: 3 / 4;
+  transform: rotate(-90deg);
+}
+#Jiyuan{
+  align-self: center;
+  grid-row: 1;
+  grid-column: 4 / 5;
+  transform: rotate(-90deg);
+}
+#Queens{
+  align-self: center;
+  grid-row: 1;
+  grid-column:5 / 6;
+  transform: rotate(-90deg);
+}
+#Turkey{
+  align-self: center;
+  grid-row:1;
+  grid-column: 6 / 7;
+  transform: rotate(-90deg);
 }
 #delhiAPI{
-  left:10vw;
-  opacity: 0.5;
+  align-self: center;
+  grid-row: 1;
+  grid-column: 1 / 2;
 }
 #cedAPI{
-  left:25vw;
-  opacity: 0.6;
+  align-self: center;
+  grid-row: 1;
+  grid-column: 2 / 3;
 }
 #jabAPI{
-  left:40vw;
-  opacity: 0.7;
+  align-self: center;
+  grid-row: 1;
+  grid-column: 3 / 4;
 }
 #jiyAPI{
-  left:55vw;
-  opacity: 0.8;
+  align-self: center;
+  grid-row: 1;
+  grid-column: 4 / 5;
 }
 #qnyAPI{
-  left:70vw;
-  opacity: 0.9;
+  align-self: center;
+  grid-row: 1;
+  grid-column: 5 / 6;
 }
-#osmAPI{
-  left:85vw;
-  opacity: 1;
+#sakAPI{
+  align-self: center;
+  grid-row: 1;
+  grid-column: 6 / 7;
 }
-a{
+@keyframes animate {
+    0%,100%
+    {
+      border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+    }
+    25%
+    {
+      border-radius: 73% 27% 26% 38% / 73% 36% 64% 27%;
+    }
+    50%
+    {
+      border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
+    }
+    75%
+    {
+      border-radius: 40% 60% 70% 30% / 47% 62% 38% 53%;
+    }
+}
+#info{
+  font-family: forma-djr-display, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 90vh;
-  left: 50vw;
+  top: 150vh;
+  width: 100vw;
+  height:120vh;
+  background-image: linear-gradient(black,#364184,#676291);
+}
+p1{
+  position: absolute;
+  top:15vh;
+  height: 10em;
+  align-self: center;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding:0;
+  color: white;
+}
+h2{
+  position: absolute;
+  top:0vh;
+  align-self: center;
+  color:white;
+}
+img{
+  margin:2vw;
+  position: relative;
+  top:10vh;
+}
+#arrow{
+  cursor: pointer;
+  position: fixed;
+  bottom: 2vh;
+  right:2vw;
+  color: white;
+  font-size: 3em;
+  transform: rotate(270deg);
 }
