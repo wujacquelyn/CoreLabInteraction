@@ -184,7 +184,7 @@ $(document).ready(function() {
 
 $(window).scroll(function() {
     var height = $(window).scrollTop();
-    if (height > 100) {
+    if (height > 800) {
         $('#arrow').fadeIn();
     } else {
         $('#arrow').fadeOut();

@@ -7,10 +7,12 @@ html,body{
   background-color: black;
 }
 #title{
-  margin: 1vh;
-  color: #5D79DD;
-  font-size: 2em;
   text-align: center;
+  font-size: 4vh;
+  margin: 1vh;
+  letter-spacing: 0.2em;
+  color: #95C2E5;
+  text-shadow: 0 0 50px #C300FF;
 }
 h1{
   position: absolute;
@@ -51,6 +53,7 @@ button{
   margin: 5vw;
   z-index: 0;
   position:absolute;
+  top: 5vh;
   height: 10vw;
   width: 10vw;
   border-color: #00D4FF;
